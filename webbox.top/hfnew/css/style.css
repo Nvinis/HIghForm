@@ -53,9 +53,22 @@ img:hover {
 h2, h3, h4 {
 	color: #040424;
 }
+#main {
+	background: #040419;
+}
+#main > section {
+	height: 100vh;
+	opacity: 0;
+	visibility: hidden;
+}
+#main #header {
+	opacity: 1;
+	visibility: visible;
+}
 #brokers,
 #multifamily {
 	height: 100vh;
+	color: #fff;
 }
 #brokers-bg {
 	background: #6c6c6c;

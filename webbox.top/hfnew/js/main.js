@@ -719,24 +719,29 @@ function move_cases() {
 
     }
 
-    var controller = new ScrollMagic.Controller();
+    var controller = new ScrollMagic.Controller(),
+        trigerPosition = .1,
+        sectoins = $('#main').find('section'),
+        mainObject = $('#main');
 
 
 
     // build tween part 1
     var sect_tween = new TimelineMax()
 
-        .to('#brokers-bg', .3, {opacity:1});
+        .to(mainObject, .001, {background:'#0000ff'})
+        .to(sectoins, .3, {autoAlpha:'0'}, '0')
+        .to('#brokers', .3, {autoAlpha:'1'}, '0');
 
 
     var scene = new ScrollMagic.Scene({
         triggerElement: "#brokers",
-        triggerHook: 0
-        // duration: 592
+        triggerHook: trigerPosition
+
     })
 
         .setTween(sect_tween)
-        .addIndicators({name: "section1"})
+        .addIndicators({name: "section1", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
         .addTo(controller);
 
     // end build part 1
@@ -744,19 +749,57 @@ function move_cases() {
     // build tween part 2
     var sect_tween2 = new TimelineMax()
 
-        .to('#multifamily-bg', .3, {opacity:1});
+        .to(mainObject, .001, {background:'#040419'})
+        .to(sectoins, .3, {autoAlpha:'0'}, '0')
+        .to('#multifamily', .3, {autoAlpha:'1'}, '0');
 
 
     var scene2 = new ScrollMagic.Scene({
         triggerElement: "#multifamily",
-        triggerHook: 0
+        triggerHook: trigerPosition
     })
 
         .setTween(sect_tween2)
-        .addIndicators({name: "section2"})
+        .addIndicators({name: "section2",colorStart: "#FFFFFF"})
         .addTo(controller);
 
     // end build part 2
+
+    // build tween part 3
+    var sect_tween3 = new TimelineMax()
+
+        .to(mainObject, .001, {background:'#ffffff'})
+        .to(sectoins, .3, {autoAlpha:'0'}, '0')
+        .to('#products', .3, {autoAlpha:'1'}, '0');
+
+
+    var scene3 = new ScrollMagic.Scene({
+        triggerElement: "#products",
+        triggerHook: trigerPosition
+    })
+
+        .setTween(sect_tween3)
+        .addIndicators({name: "section3", colorStart: "#ffffff", colorTrigger:"#000000"})
+        .addTo(controller);
+
+    // end build part 3
+
+    // build tween part 3
+    var sect_tween4 = new TimelineMax()
+
+        .to(mainObject, .001, {background:'#040419'});
+
+
+    var scene4 = new ScrollMagic.Scene({
+        triggerElement: "#about",
+        triggerHook: trigerPosition
+    })
+
+        .setTween(sect_tween4)
+        .addIndicators({name: "section4",colorStart: "#000", colorTrigger:"#000000"})
+        .addTo(controller);
+
+    // end build part 3
 
 });
 
