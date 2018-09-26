@@ -1,5 +1,5 @@
 $(document).ready(function ($) {
-
+    if($('.main-header').length){
 // tabs
     (function ( $, window, document, undefined ) {
 
@@ -716,15 +716,58 @@ function move_cases() {
         $('.wrap-menu').removeClass('slicknav_open');
     });
 
-});
 
-$(window).on("load resize",function(){
-    var width = $(window).width();
-
-    if (width >= 900 ) {
-        $('#sticky-menu').css({
-            'display': 'flex'
-        })
     }
 
+    var controller = new ScrollMagic.Controller();
+
+
+
+    // build tween part 1
+    var sect_tween = new TimelineMax()
+
+        .to('#brokers-bg', .3, {opacity:1});
+
+
+    var scene = new ScrollMagic.Scene({
+        triggerElement: "#brokers",
+        triggerHook: 0
+        // duration: 592
+    })
+
+        .setTween(sect_tween)
+        .addIndicators({name: "section1"})
+        .addTo(controller);
+
+    // end build part 1
+
+    // build tween part 2
+    var sect_tween2 = new TimelineMax()
+
+        .to('#multifamily-bg', .3, {opacity:1});
+
+
+    var scene2 = new ScrollMagic.Scene({
+        triggerElement: "#multifamily",
+        triggerHook: 0
+    })
+
+        .setTween(sect_tween2)
+        .addIndicators({name: "section2"})
+        .addTo(controller);
+
+    // end build part 2
+
 });
+
+
+// $(window).on("load resize",function(){
+//     var width = $(window).width();
+//
+//     if (width >= 900 ) {
+//         $('#sticky-menu').css({
+//             'display': 'flex'
+//         })
+//     }
+//
+// });
