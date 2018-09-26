@@ -731,8 +731,8 @@ function move_cases() {
     var sect_tween = new TimelineMax()
 
         .to(mainObject, .001, {background:'#0000ff'})
-        .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#brokers', .3, {autoAlpha:'1'}, '0');
+        .to(sectoins, .4, {autoAlpha:'0'}, '0')
+        .to('#brokers', .4, {autoAlpha:'1'}, '0');
 
 
     var scene = new ScrollMagic.Scene({
@@ -751,8 +751,8 @@ function move_cases() {
     var sect_tween2 = new TimelineMax()
 
         .to(mainObject, .001, {background:'#040419'})
-        .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#multifamily', .3, {autoAlpha:'1'}, '0');
+        .to(sectoins, .4, {autoAlpha:'0'}, '0')
+        .to('#multifamily', .4, {autoAlpha:'1'}, '0');
 
 
     var scene2 = new ScrollMagic.Scene({

@@ -10,7 +10,7 @@ body {
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 25px;
 	font-family: 'ProximaNova-Light', sans-serif;
 	color: #42526E;
@@ -64,6 +64,16 @@ h2, h3, h4 {
 #main #header {
 	opacity: 1;
 	visibility: visible;
+	padding-top: 35px;
+}
+.main-nav {
+	list-style: none;
+	padding-left: 0;
+}
+.main-nav>li>a {
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'ProximaNova-Semibold', sans-serif;
 }
 #brokers,
 #multifamily {
