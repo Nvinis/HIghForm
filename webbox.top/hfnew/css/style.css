@@ -43,13 +43,23 @@ button, a {
 .transition-defl,
 a:hover,
 img:hover {
-	-webkit-transition: 0.4s ease-in-out;
-	-moz-transition: 0.4s ease-in-out;
-	-ms-transition: 0.4s ease-in-out;
-	-o-transition: 0.4s ease-in-out;
-	transition: 0.4s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 .h2, .h3, .h4,
 h2, h3, h4 {
 	color: #040424;
+}
+#brokers,
+#multifamily {
+	height: 100vh;
+}
+#brokers {
+	background: #6c6c6c;
+}
+#multifamily {
+	background: #296d22;
 }
