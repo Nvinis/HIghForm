@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b2a7f0a-1e7f-47ee-ada3-89b53fa75d89" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webbox.top/hfnew/index.html" afterPath="$PROJECT_DIR$/webbox.top/hfnew/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webbox.top/hfnew/js/main.js" afterPath="$PROJECT_DIR$/webbox.top/hfnew/js/main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,14 +26,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="679" column="16" lean-forward="false" selection-start-line="679" selection-start-column="16" selection-end-line="679" selection-end-column="16" />
+            <state relative-caret-position="-13">
+              <caret line="679" column="0" lean-forward="false" selection-start-line="679" selection-start-column="0" selection-end-line="679" selection-end-column="0" />
               <folding>
                 <element signature="e#124#3926#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,6 +70,7 @@
       <list>
         <option value="$PROJECT_DIR$/webbox.top/hfnew/index.html" />
         <option value="$PROJECT_DIR$/webbox.top/hfnew/js/main.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -190,7 +201,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1405000" />
+    <option name="totallyTimeSpent" value="1429000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2436" height="1417" extended-state="0" />
@@ -499,11 +510,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="679" column="16" lean-forward="false" selection-start-line="679" selection-start-column="16" selection-end-line="679" selection-end-column="16" />
+        <state relative-caret-position="-13">
+          <caret line="679" column="0" lean-forward="false" selection-start-line="679" selection-start-column="0" selection-end-line="679" selection-end-column="0" />
           <folding>
             <element signature="e#124#3926#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

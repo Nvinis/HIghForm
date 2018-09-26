@@ -677,7 +677,7 @@ function move_cases() {
                 triggerElement: "#about-us-triger",
                 triggerHook: 0.55
             })
-                
+
                 .setTween(tween_3)
                 .addTo(controller);
             var tween_4 = new TimelineMax({ ease: Power0.easeNone});
