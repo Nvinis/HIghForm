@@ -721,7 +721,7 @@ function move_cases() {
     }
 
     var controller = new ScrollMagic.Controller(),
-        trigerPosition = .1,
+        trigerPosition = .7,
         sectoins = $('#main').find('section'),
         mainObject = $('#main');
 
