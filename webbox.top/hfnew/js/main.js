@@ -720,35 +720,36 @@ $(document).ready(function ($) {
 //
 //     }
 
+
+
+
+    // // init
+    // var controller = new ScrollMagic.Controller();
+    //
+    // // define movement of panels
+    // var wipeAnimation = new TimelineMax()
+    //     .fromTo("#brokers", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone})  // in from left
+    //     .fromTo("#multifamily",    1, {y:  "200%"}, {y: "0%", ease: Linear.easeNone})  // in from right
+    //     // .fromTo("section.panel.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+    //
+    // // create scene to pin and link animation
+    // new ScrollMagic.Scene({
+    //     triggerElement: "#main",
+    //     triggerHook: "0",
+    //     duration: "200%"
+    // })
+    //     .setPin("#pinContainer")
+    //     .setTween(wipeAnimation)
+    //     .addIndicators() // add indicators (requires plugin)
+    //     .addTo(controller);
+    //
+    // // end init
+
+
     var controller = new ScrollMagic.Controller(),
-        trigerPosition = .4,
+        trigerPosition = .6,
         sectoins = $('.section-content'),
         mainObject = $('#main');
-
-
-    // init
-    var controller = new ScrollMagic.Controller();
-
-    // define movement of panels
-    var wipeAnimation = new TimelineMax()
-        .fromTo("section.panel.turqoise", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-        .fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-        .fromTo("section.panel.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
-
-    // create scene to pin and link animation
-    new ScrollMagic.Scene({
-        triggerElement: "#pinContainer",
-        triggerHook: "onLeave",
-        duration: "300%"
-    })
-        .setPin("#pinContainer")
-        .setTween(wipeAnimation)
-        .addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
-
-    // end init
-
-
 
 
     // build tween part 1
@@ -757,13 +758,37 @@ $(document).ready(function ($) {
         .to(mainObject, .001, {background:'#0000ff'})
         .to(sectoins, .4, {autoAlpha:'0'}, '0')
         .to('#brokers .section-content', .4, {autoAlpha:'1'}, '0')
+
+        // .to('#brokers-nav', .01, {position: 'absolute', top: 0, bottom:'auto'}, '0')
+
+    ;
+
+
+    var scene = new ScrollMagic.Scene({
+        triggerElement: "#brokers",
+        triggerHook: trigerPosition,
+        // duration: "100%"
+    })
+
+        .setTween(sect_tween)
+        .addIndicators({name: "section1 ", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
+        .addTo(controller);
+
+    // end build part 1
+
+
+
+
+    // build tween part 1.1
+    var sect_tween1_1 = new TimelineMax()
+
         .to('#brokers h1', 1, {ease: Power2.easeOut, y:0})
         .to('#brokers p', 1, {ease: Power2.easeInOut, y:0}, '-=.5')
 
     ;
 
 
-    var scene = new ScrollMagic.Scene({
+    var scene1_1 = new ScrollMagic.Scene({
         triggerElement: "#brokers",
         triggerHook: trigerPosition
 
@@ -771,28 +796,7 @@ $(document).ready(function ($) {
 
         .setTween(sect_tween1_1)
         .addIndicators({name: "section1 content", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
-        .addTo(controller);
-
-    // end build part 1
-
-    // build tween part 1.1
-    var sect_tween1_1 = new TimelineMax()
-
-        .to('#brokers .section-content', .4, {autoAlpha:'1'}, '0')
-        .to('#brokers h1', 1, {ease: Power2.easeOut, y:0})
-        .to('#brokers p', 1, {ease: Power2.easeInOut, y:0}, '-=.5')
-
-    ;
-
-
-    var scene = new ScrollMagic.Scene({
-        triggerElement: "#brokers",
-        triggerHook: trigerPosition
-
-    })
-
-        .setTween(sect_tween)
-        .addIndicators({name: "section1", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
+        .reverse(false)
         .addTo(controller);
 
     // end build part 1.1
@@ -816,7 +820,8 @@ $(document).ready(function ($) {
 
     var scene2 = new ScrollMagic.Scene({
         triggerElement: "#multifamily",
-        triggerHook: trigerPosition
+        triggerHook: trigerPosition,
+        duration: "100%"
     })
 
         .setTween(sect_tween2)
@@ -835,7 +840,8 @@ $(document).ready(function ($) {
 
     var scene3 = new ScrollMagic.Scene({
         triggerElement: "#products",
-        triggerHook: trigerPosition
+        triggerHook: trigerPosition,
+        duration: "100%"
     })
 
         .setTween(sect_tween3)

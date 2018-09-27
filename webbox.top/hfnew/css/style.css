@@ -75,8 +75,23 @@ h2, h3, h4 {
 }
 .nav-element-wrap {
 	position: fixed;
-	bottom: 0;
+	top: calc(100% - 130px);
 	left: initial;
+}
+#brokers-nav {
+	top: calc(100% - 350px);
+}
+#multifamily-nav {
+	top: calc(100% - 310px);
+}
+#products-nav {
+	top: calc(100% - 270px);
+}
+#about-nav {
+	top: calc(100% - 230px);
+}
+#lets-talk-nav {
+	top: calc(100% - 190px);
 }
 .section-content {
 
@@ -86,6 +101,7 @@ h2, h3, h4 {
 	color: #fff;
 	text-transform: uppercase;
 	font-family: 'ProximaNova-Semibold', sans-serif;
+	font-size: 14px;
 }
 .head-content {
 	height: calc(100vh - 35px);
@@ -113,5 +129,58 @@ h2, h3, h4 {
 }
 #brokers h1,
 #brokers p {
-	transform: translateY(90px);
+	transform: translateY(70px);
+}
+.hurdles-bubbles {
+	position: absolute;
+	overflow: hidden;
+	left: 0;
+	bottom: 0;
+	height: 460px;
+	width: 100%;
+}
+.hurdles-node {
+	position: absolute;
+	font-size: 14px;
+	padding: 0 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-radius: 9999px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.hurdles-node {
+	font-size:16px;
+	height: 40px
+}
+
+
+.hurdles-node--blue {
+	background-color: #c4f0ff;
+	color: #217ab7
+}
+
+.hurdles-node--pink {
+	background-color: #ffe0f5;
+	color: #9251ac
+}
+
+.hurdles-node--yellow {
+	background-color: #fdeebe;
+	color: #c85d42
+}
+
+.hurdles-node--green {
+	background-color: #d6facf;
+	color: #159570
 }
