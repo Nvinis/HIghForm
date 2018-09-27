@@ -24,8 +24,9 @@ $(document).ready(function ($) {
 
 
     var tl1 = new TimelineMax();
+    var item_
 
     tl1
-        .to('.hurdles-node', 400, {x:'-3000px', repeat: -1});
+        .staggerTo('.hurdles-node', 10, {ease: Power0.easeNone, x:'-1000px', repeat: -1}, .001); //400
 
 });
