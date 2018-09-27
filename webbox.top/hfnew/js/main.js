@@ -722,7 +722,7 @@ function move_cases() {
 
     var controller = new ScrollMagic.Controller(),
         trigerPosition = .7,
-        sectoins = $('#main').find('section'),
+        sectoins = $('.section-content'),
         mainObject = $('#main');
 
 
@@ -732,7 +732,11 @@ function move_cases() {
 
         .to(mainObject, .001, {background:'#0000ff'})
         .to(sectoins, .4, {autoAlpha:'0'}, '0')
-        .to('#brokers', .4, {autoAlpha:'1'}, '0');
+        .to('#brokers .section-content', .4, {autoAlpha:'1'}, '0')
+        .to('#brokers h1', .3, {autoAlpha:'1', y:0})
+        .to('#brokers p', .3, {autoAlpha:'1', y:0}, '-=.2')
+
+    ;
 
 
     var scene = new ScrollMagic.Scene({
@@ -752,7 +756,7 @@ function move_cases() {
 
         .to(mainObject, .001, {background:'#040419'})
         .to(sectoins, .4, {autoAlpha:'0'}, '0')
-        .to('#multifamily', .4, {autoAlpha:'1'}, '0');
+        .to('#multifamily .section-content', .4, {autoAlpha:'1'}, '0');
 
 
     var scene2 = new ScrollMagic.Scene({
