@@ -52,6 +52,7 @@ img:hover {
 .h2, .h3, .h4,
 h2, h3, h4 {
 	color: #040424;
+
 }
 #main {
 	background: #040419;
@@ -76,6 +77,9 @@ h2, h3, h4 {
 	position: fixed;
 	bottom: 0;
 	left: initial;
+}
+.section-content {
+
 }
 .main-nav>li>a,
 .nav-element-wrap>a {
@@ -109,5 +113,5 @@ h2, h3, h4 {
 }
 #brokers h1,
 #brokers p {
-	transform: translete;
+	transform: translateY(90px);
 }
