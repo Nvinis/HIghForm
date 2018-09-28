@@ -1,10 +1,45 @@
-
-@import "../fonts/styles.css";
-* {
-	margin: 0;
-	padding: 0;
+@font-face {
+	font-family: 'ProximaNova-Bold',sans-serif;
+	src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf')  format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
-
+@font-face {
+	font-family: 'ProximaNova-Light',sans-serif;
+	src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNova-Light.woff') format('woff'), url('../fonts/ProximaNova-Light.ttf')  format('truetype'), url('../fonts/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaNova-Regular',sans-serif;
+	src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf')  format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaNova-Semibold',sans-serif;
+	src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNova-Semibold.woff') format('woff'), url('../fonts/ProximaNova-Semibold.ttf')  format('truetype'), url('../fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'BELLOWSREGULAR',sans-serif;
+	src: url('../fonts/BELLOWSREGULAR.eot?#iefix') format('embedded-opentype'),  url('../fonts/BELLOWSREGULAR.woff') format('woff'), url('../fonts/BELLOWSREGULAR.ttf')  format('truetype'), url('../fonts/BELLOWSREGULAR.svg#BELLOWSREGULAR') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaNova-Black',sans-serif;
+	src: url('../fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNova-Black.woff') format('woff'), url('../fonts/ProximaNova-Black.ttf')  format('truetype'), url('../fonts/ProximaNova-Black.svg#ProximaNova-Black') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaNova-Extrabld',sans-serif;
+	src: url('../fonts/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNova-Extrabld.woff') format('woff'), url('../fonts/ProximaNova-Extrabld.ttf')  format('truetype'), url('../fonts/ProximaNova-Extrabld.svg#ProximaNova-Extrabld') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 body {
 	width: 100%;
 	font-weight: normal;
@@ -16,44 +51,23 @@ body {
 	color: #42526E;
 	min-height: 100vh;
 }
-p {
-	margin: 0 0 10px;
-}
-ul {
-	margin-bottom: 0;
-}
-label {
-	display: block;
-}
 img:focus {
 	background: none !important;
 	border: none !important;
 }
 button, a {
 	outline: none !important;
-	-webkit-transition: 0.4s ease-in-out;
-	-moz-transition: 0.4s ease-in-out;
-	-ms-transition: 0.4s ease-in-out;
-	-o-transition: 0.4s ease-in-out;
-	transition: 0.4s ease-in-out;
-}
-/*=======================================================
-			HEADINGS
-========================================================*/
-.transition-defl,
-a:hover,
-img:hover {
 	-webkit-transition: 0.3s ease-in-out;
 	-moz-transition: 0.3s ease-in-out;
 	-ms-transition: 0.3s ease-in-out;
 	-o-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
 }
-.h2, .h3, .h4,
-h2, h3, h4 {
-	color: #040424;
+/*=======================================================
+			HEADINGS
+========================================================*/
 
-}
+
 #main {
 	background: #020320;
 }
@@ -77,7 +91,6 @@ h2, h3, h4 {
 	opacity: 1;
 	visibility: visible;
 	padding-top: 35px;
-
 }
 #header-mask-bg {
 	bottom: 0;
@@ -87,41 +100,53 @@ h2, h3, h4 {
 	background: url(../images/headerBg.svg) center bottom no-repeat;
 	background-size: contain;
 }
+.head-content h1 {
+	font-size: 60px;
+	line-height: 1;
+}
 .main-nav {
 	list-style: none;
 	padding-left: 0;
 	margin-top: 200px;
 	z-index: 10;
 }
-.nav-element-wrap {
-	position: fixed;
-	top: calc(100% - 130px);
-	left: initial;
+.main-nav>li {
+	margin-bottom: 21px;
 }
-#brokers-nav {
-	top: calc(100% - 350px);
+.main-nav>li:last-child {
+	position: relative;
+	padding-top: 48px;
 }
-#multifamily-nav {
-	top: calc(100% - 310px);
+.main-nav>li:last-child:before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 45px;
+	border-top: 1px solid #fff;
 }
-#products-nav {
-	top: calc(100% - 270px);
-}
-#about-nav {
-	top: calc(100% - 230px);
-}
-#lets-talk-nav {
-	top: calc(100% - 190px);
-}
-.section-content {
-
-}
-.main-nav>li>a,
+.main-nav li a,
 .nav-element-wrap>a {
+	display: block;
 	color: #fff;
 	text-transform: uppercase;
 	font-family: 'ProximaNova-Semibold', sans-serif;
-	font-size: 14px;
+	font-size: 12px;
+	letter-spacing: .1em;
+}
+.sub-menu {
+	list-style: none;
+	margin-top: 15px;
+}
+.sub-menu li a {
+	position: relative;
+}
+.sub-menu li a:before {
+	top: 6px;
+	left: -20px;
+	width: 10px;
+	height: 10px;
+	background: #fff;
 }
 .head-content {
 	height: calc(100vh - 35px);
@@ -129,17 +154,7 @@ h2, h3, h4 {
 .height-full {
 	height: calc(100vh - 35px);
 }
-#brokers,
-#multifamily {
-	height: 100vh;
-	color: #fff;
-}
-#brokers-bg {
-	background: #6c6c6c;
-}
-#multifamily-bg {
-	background: #296d22;
-}
+
 .sections-bg {
 	top: 0;
 	left: 0;
@@ -206,4 +221,94 @@ h2, h3, h4 {
 .hurdles-node--green {
 	background-color: #d6facf;
 	color: #159570
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.transition-defl,
+a:hover,
+img:hover {
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+.h2, .h3, .h4,
+h2, h3, h4 {
+	/*color: #040424;*/
+}
+.ff-light {
+	font-family: 'ProximaNova-Light',sans-serif;
+}
+.ff-regular {
+	font-family: 'ProximaNova-Regular',sans-serif;
+}
+.ff-semibold {
+	font-family: 'ProximaNova-Semibold',sans-serif;
+}
+.ff-bold {
+	font-family: 'ProximaNova-Bold',sans-serif;
+}
+.ff-extrabold {
+	font-family: 'ProximaNova-Extrabld',sans-serif;
+}
+.ff-black {
+	font-family: 'ProximaNova-Black',sans-serif;
+}
+.before-block,
+.after-block {
+	position: relative;
+}
+.sub-menu li a:before,
+.before-block:before {
+	position: absolute;
+	content: '';
+}
+.after-block:after {
+	position: absolute;
+	content: '';
+}
+.nav-element-wrap {
+	position: fixed;
+	top: calc(100% - 130px);
+	left: initial;
+}
+#brokers-nav {
+	top: calc(100% - 350px);
+}
+#multifamily-nav {
+	top: calc(100% - 310px);
+}
+#products-nav {
+	top: calc(100% - 270px);
+}
+#about-nav {
+	top: calc(100% - 230px);
+}
+#lets-talk-nav {
+	top: calc(100% - 190px);
+}
+#brokers,
+#multifamily {
+	height: 100vh;
+	color: #fff;
+}
+#brokers-bg {
+	background: #6c6c6c;
+}
+#multifamily-bg {
+	background: #296d22;
 }
