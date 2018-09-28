@@ -756,7 +756,7 @@ $(document).ready(function ($) {
     var sect_tween = new TimelineMax()
 
         .to(mainObject, .001, {background:'#0000ff'})
-        .to(sectoins, .4, {autoAlpha:'0'}, '0')
+        .to([sectoins, '#header-mask-bg'], .4, {autoAlpha:'0'}, '0')
         .to('#brokers .section-content', .4, {autoAlpha:'1'}, '0')
 
         // .to('#brokers-nav', .01, {position: 'absolute', top: 0, bottom:'auto'}, '0')
