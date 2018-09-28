@@ -23,10 +23,10 @@ $(document).ready(function ($) {
     // end build menu part 1
 
 
-    var tl1 = new TimelineMax();
-    var item_
+    var tl1 = new TimelineMax({repeat: -1});
+    // var item_hr = $()
 
     tl1
-        .staggerTo('.hurdles-node', 10, {ease: Power0.easeNone, x:'-1000px', repeat: -1}, .001); //400
+        // .fromTo('.hurdles-node', 10, {ease: Power0.easeNone, x:'-=1140'}, {ease: Power0.easeNone, x:'-1140'}); //400
 
 });

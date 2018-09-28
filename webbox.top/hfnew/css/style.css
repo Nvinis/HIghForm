@@ -129,6 +129,7 @@ h2, h3, h4 {
 }
 #brokers h1,
 #brokers p {
+
 	-webkit-transform: translateY(70px);
 	-ms-transform: translateY(70px);
 	transform: translateY(70px);
