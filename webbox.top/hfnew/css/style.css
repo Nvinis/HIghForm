@@ -50,7 +50,31 @@ body {
 	font-family: 'ProximaNova-Light', sans-serif;
 	color: #42526E;
 	min-height: 100vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
+.viewport {
+	overflow: hidden;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.scroll-container {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	z-index: 10;
+	/*display: flex;*/
+	/*justify-content: center;*/
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+}
+
 img:focus {
 	background: none !important;
 	border: none !important;
@@ -70,6 +94,12 @@ button, a {
 
 #main {
 	background: #020320;
+	-webkit-transition: background-color 0.3s ease-in-out;
+	-o-transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
+}
+#main.loading {
+	transition: background-color 1s ease-in-out;
 }
 #main > section {
 	height: 100vh;
@@ -91,6 +121,7 @@ button, a {
 	opacity: 1;
 	visibility: visible;
 }
+
 #header-mask-bg {
 	bottom: 0;
 	left: 0;

@@ -1,32 +1,71 @@
-$(document).ready(function ($) {
-
-    var controller = new ScrollMagic.Controller(),
-        trigerPositionMenu = .55;
 
 
 
-    // // build menu part 1
-    // var menu_tween_1 = new TimelineMax()
-    //
-    //     .to('#brokers-nav', 0.1, {position:'initial', bottom: 'auto', top: 'initial'});
-    //
-    //
-    // var sceneMenu1 = new ScrollMagic.Scene({
-    //     triggerElement: "#brokers",
-    //     triggerHook: trigerPositionMenu
-    // })
-    //
-    //     .setTween(menu_tween_1)
-    //     .addIndicators({name: "menu1 ", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
-    //     .addTo(controller);
-    //
-    // // end build menu part 1
+var html = document.documentElement;
+var body = document.body;
 
+var scroller = {
+    target: document.querySelector("#main"),
+    ease: 0.1, // <= scroll speed
+    endY: 0,
+    y: 0,
+    resizeRequest: 1,
+    scrollRequest: 0,
+};
 
-    var tl1 = new TimelineMax({repeat: -1});
-    // var item_hr = $()
+var requestId = null;
 
-    tl1
-        // .fromTo('.hurdles-node', 10, {ease: Power0.easeNone, x:'-=1140'}, {ease: Power0.easeNone, x:'-1140'}); //400
-
+TweenLite.set(scroller.target, {
+    // rotation: 0.01,
+    force3D: true
 });
+
+window.addEventListener("load", onLoad);
+
+function onLoad() {
+    updateScroller();
+    window.focus();
+    window.addEventListener("resize", onResize);
+    document.addEventListener("scroll", onScroll);
+}
+
+function updateScroller() {
+
+    var resized = scroller.resizeRequest > 0;
+
+    if (resized) {
+        var height = scroller.target.clientHeight;
+        body.style.height = height + "px";
+        scroller.resizeRequest = 0;
+    }
+
+    var scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
+
+    scroller.endY = scrollY;
+    scroller.y += (scrollY - scroller.y) * scroller.ease;
+
+    if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
+        scroller.y = scrollY;
+        scroller.scrollRequest = 0;
+    }
+
+    TweenLite.set(scroller.target, {
+        y: -scroller.y
+    });
+
+    requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
+}
+
+function onScroll() {
+    scroller.scrollRequest++;
+    if (!requestId) {
+        requestId = requestAnimationFrame(updateScroller);
+    }
+}
+
+function onResize() {
+    scroller.resizeRequest++;
+    if (!requestId) {
+        requestId = requestAnimationFrame(updateScroller);
+    }
+}
