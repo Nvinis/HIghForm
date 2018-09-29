@@ -756,18 +756,10 @@ $(document).ready(function ($) {
     var sect_tween = new TimelineMax()
 
         .to(mainObject, .001, {background:'#0000ff'})
-        .to([sectoins, '#header-mask-bg', '.items-bubbles-wrap'], .2, {autoAlpha:'0',onReverseComplete:tweenReverse}, '0')
+        .to([sectoins, '#header-mask-bg', '.items-bubbles-wrap'], .2, {autoAlpha:'0'}, '0')
         .to('#brokers .section-content', .4, {autoAlpha:'1'}, '0')
         .set('#header-mask-bg', {className: '+=loading'})
     ;
-    function tweenReverse() {
-        console.log("the tween is Reverse");
-        // TweenMax.to([sectoins, '#header-mask-bg', '.items-bubbles-wrap'], 2, {autoAlpha:'1'});
-        TweenLite.set('#header-mask-bg', {className: '-=loading'});
-        // TweenLite.set('#header-mask-bg', {autoAlpha:'1'});
-    }
-    // setTimeout(tweenReverse, 1000);
-
     var scene = new ScrollMagic.Scene({
         triggerElement: "#brokers",
         triggerHook: trigerPosition,
@@ -775,15 +767,16 @@ $(document).ready(function ($) {
 
     })
         .on("leave", function (event) {
-            // console.log("Scene left.");
-           // $(mainObject).addClass('sd');
+            console.log("Scene left.");
+           $('#header-mask-bg').addClass('loading');
+
            //  TweenMax.to('#header-mask-bg', 1, {className: '+=loading'});
         })
 
         .setTween(sect_tween)
         .addIndicators({name: "section1 ", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
         // .reverse(sect_tween_reverse)
-        // .reverse()
+        // .reverse(true)
         // .setClassToggle('#main', 'myClass')
         .removeClassToggle('myClass')
         // .removeClassToggle('#main', 'myClass')
@@ -795,9 +788,6 @@ $(document).ready(function ($) {
 
 
     // end build part 1
-
-
-
 
 
 
