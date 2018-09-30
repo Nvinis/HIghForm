@@ -746,6 +746,43 @@ $(document).ready(function ($) {
     // // end init
 
 
+
+    // scroll menu
+    var lastId,
+        topMenu = $('#nav'),
+        topMenuHeight = topMenu.outerHeight() - 414,
+        menuItems = topMenu.find('a'),
+        scrollItems = menuItems.map(function(){
+            var item = $($(this).attr('href'));
+            if (item.length) { return item; }
+        });
+
+    menuItems.click(function(e){
+        var href = $(this).attr('href'),
+            offsetTop = href === '#' ? 0 : $(href).offset().top - topMenuHeight;
+        $('html, body').stop().animate({
+            scrollTop: offsetTop
+        }, 1200);
+        e.preventDefault();
+    });
+
+    $(window).scroll(function(){
+        var fromTop = $(this).scrollTop()+topMenuHeight + 100;
+        var cur = scrollItems.map(function(){
+            if ($(this).offset().top < fromTop)
+                return this;
+        });
+        cur = cur[cur.length-1];
+        var id = cur && cur.length ? cur[0].id : '';
+
+        if (lastId !== id) {
+            lastId = id;
+            menuItems
+                .parent().removeClass('active')
+                .end().filter("[href='#"+id+"']").parent().addClass("active");
+        }
+    });
+
     // wow
     var wow = new WOW(
         {
@@ -759,7 +796,7 @@ $(document).ready(function ($) {
                 // the argument that is passed in is the DOM node being animated
             },
             scrollContainer: null,    // optional scroll container selector, otherwise use window,
-            resetAnimation: false,     // reset animation on end (default is true)
+            resetAnimation: true,     // reset animation on end (default is true)
         }
     );
     wow.init();
@@ -864,14 +901,13 @@ $(document).ready(function ($) {
     var sect_tween2 = new TimelineMax()
 
         .to(mainObject, .001, {background:'#040419'})
-        .to(sectoins, .4, {autoAlpha:'0'}, '0')
-        .to('#multifamily .section-content', .4, {autoAlpha:'1'}, '0');
+        .to(sectoins, .3, {autoAlpha:'0'}, '0')
+        .to('#multifamily .section-content', .3, {autoAlpha:'1'}, '0');
 
 
     var scene2 = new ScrollMagic.Scene({
         triggerElement: "#multifamily",
-        triggerHook: trigerPosition,
-        duration: "100%"
+        triggerHook: trigerPosition
     })
 
         .setTween(sect_tween2)
@@ -885,13 +921,14 @@ $(document).ready(function ($) {
 
         .to(mainObject, .001, {background:'#ffffff'})
         .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#products', .3, {autoAlpha:'1'}, '0');
+        .to('#products .section-content', .3, {autoAlpha:'1'}, '0')
+        .to('#nav li  a', .05, {color: '#01173a',textShadow: '0px 0px 10px #ffffff'});
 
 
     var scene3 = new ScrollMagic.Scene({
         triggerElement: "#products",
         triggerHook: trigerPosition,
-        duration: "100%"
+
     })
 
         .setTween(sect_tween3)
@@ -950,7 +987,9 @@ $(document).ready(function ($) {
         //
         // });
 
-
+    $('.listener-contained').plate({
+        element: '.plate-contained'
+    });
 });
 
 
