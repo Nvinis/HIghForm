@@ -746,6 +746,26 @@ $(document).ready(function ($) {
     // // end init
 
 
+    // wow
+    var wow = new WOW(
+        {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset:       0,          // distance to the element when triggering the animation (default is 0)
+            mobile:       true,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+                // the callback is fired every time an animation is started
+                // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null,    // optional scroll container selector, otherwise use window,
+            resetAnimation: false,     // reset animation on end (default is true)
+        }
+    );
+    wow.init();
+    //end wow
+
+
     var controller = new ScrollMagic.Controller(),
         trigerPosition = .6,
         sectoins = $('.section-content'),
@@ -802,13 +822,20 @@ $(document).ready(function ($) {
     // end build part 1.2
 
 
+
     // build tween part 1.1
-    var objects_broker_section = $('#brokers h2, #brokers p, #brokers .wrap-inline-btn');
+    var objects_broker_section = $('#brohers-h2, #brokers-p, #brokers-btn, #brokers-img');
 
 
     var sect_tween1_1 = new TimelineMax()
 
-        .staggerTo(objects_broker_section, 1, {ease: Power2.easeOut, y:0}, '.5');
+
+        // .to('#brokers h2', 1, {ease: Power2.easeOut, y:0})
+        // .to('#brokers p', 1, {ease: Power2.easeInOut, y:0}, '-=.5')
+        // .to('#brokers .inline-btn', 1, {ease: Power2.easeInOut, y:0}
+
+
+        // .staggerTo(objects_broker_section, 1, {ease: Power2.easeOut, y:0}, '.5');
 
 
     var scene1_1 = new ScrollMagic.Scene({
