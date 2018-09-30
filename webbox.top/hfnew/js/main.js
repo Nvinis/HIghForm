@@ -756,9 +756,9 @@ $(document).ready(function ($) {
     var sect_tween = new TimelineMax()
 
         .to(mainObject, .2, {background:'#0000ff'})
-        .to([sectoins, '#header-mask-bg', '.items-bubbles-wrap'], .15, {opacity:'0'}, '0')
+        .to([sectoins, '.items-bubbles-wrap'], .15, {autoAlpha:'0'}, '0')
         .to('#brokers .section-content', .4, {autoAlpha:'1'}, '0')
-        .set('#header-mask-bg', {className: '+=loading'}, '+=2')
+        .set('#header-mask-bg', {className: '-=loading'})
     ;
 
     var scene = new ScrollMagic.Scene({
@@ -782,23 +782,33 @@ $(document).ready(function ($) {
         // .removeClassToggle('myClass')
         .addTo(controller);
 
-
-
-
-
-
     // end build part 1
 
+    // build tween part 1.2
+    var sect_tween1_12 = new TimelineMax()
+        .to('#header-mask-bg', .1, {autoAlpha:'0'});
 
+
+    var scene1_12 = new ScrollMagic.Scene({
+        triggerElement: "#brokers",
+        triggerHook: trigerPosition
+
+    })
+
+        .setTween(sect_tween1_12)
+        .addIndicators({name: "section1 content", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
+        .addTo(controller);
+
+    // end build part 1.2
 
 
     // build tween part 1.1
+    var objects_broker_section = $('#brokers h2, #brokers p, #brokers .wrap-inline-btn');
+
+
     var sect_tween1_1 = new TimelineMax()
 
-        .to('#brokers h1', 1, {ease: Power2.easeOut, y:0})
-        .to('#brokers p', 1, {ease: Power2.easeInOut, y:0}, '-=.5')
-
-    ;
+        .staggerTo(objects_broker_section, 1, {ease: Power2.easeOut, y:0}, '.5');
 
 
     var scene1_1 = new ScrollMagic.Scene({
@@ -809,7 +819,7 @@ $(document).ready(function ($) {
 
         .setTween(sect_tween1_1)
         .addIndicators({name: "section1 content", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
-        .reverse(false)
+        // .reverse(false)
         .addTo(controller);
 
     // end build part 1.1
@@ -879,6 +889,40 @@ $(document).ready(function ($) {
         .addTo(controller);
 
     // end build part 3
+
+
+
+
+
+
+
+
+
+
+
+
+        TweenMax.set(".items-bubbles", {
+
+            y:function(i) {
+                return i * 50;
+            }
+        });
+
+
+
+        // TweenMax.to('.items-bubbles', 2, {repeat: -1,
+        //     ease: Linear.easeNone,
+        //     y: "-=580", //move each box 500px to right
+        //
+        //
+        //     modifiers: {
+        //         y: function(y) {
+        //             return y % 550; //force x value to be between 0 and 500 using modulus
+        //         }
+        //     },
+        //
+        // });
+
 
 });
 
