@@ -954,17 +954,6 @@ $(document).ready(function ($) {
 
     // end build part 3
 
-
-
-
-
-
-
-
-
-
-
-
         TweenMax.set(".items-bubbles", {
 
             y:function(i) {

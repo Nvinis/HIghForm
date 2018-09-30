@@ -491,12 +491,14 @@ h2, h3, h4 {
 	color: #fff;
 	text-align: center;
 }
+.wrap-product-item-img {
+	height: 200px;
+}
 .plate-contained > .inline-btn {
 	color: #fff;
 }
 .blue-bg-item {
 	background: url(../images/itemProduct1Bg.jpg) 0 0 no-repeat;
-
 }
 .listener-contained .icon-arrow-right {
 	width: 12px;
@@ -507,6 +509,7 @@ h2, h3, h4 {
 }
 .plate-contained > .text-item {
 	position: relative;
+	top: -15px;
 }
 .red-bg-item {
 	background: url(../images/itemProduct2Bg.jpg) 0 0 no-repeat;
