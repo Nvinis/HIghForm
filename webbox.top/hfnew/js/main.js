@@ -890,13 +890,6 @@ $(document).ready(function ($) {
 
 
 
-
-
-
-
-
-
-
     // build tween part 2
     var sect_tween2 = new TimelineMax()
 
@@ -976,9 +969,21 @@ $(document).ready(function ($) {
         //
         // });
 
-    $('.listener-contained').plate({
-        element: '.plate-contained'
+    // $('.listener-contained').plate({
+    //     element: '.plate-contained',
+    //     maxRotation: 5,
+    //     animationDuration: 200
+    //
+    // });
+
+    $(".listener-contained").hover3d({
+        selector: ".project__card",
+        shine: false,
+        sensitivity: 25,
+
     });
+
+
 });
 
 
@@ -992,4 +997,3 @@ $(document).ready(function ($) {
 //     }
 //
 // });
-
