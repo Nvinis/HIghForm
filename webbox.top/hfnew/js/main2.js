@@ -748,41 +748,41 @@ $(document).ready(function ($) {
 
 
     // scroll menu
-    var lastId,
-        topMenu = $('#nav'),
-        topMenuHeight = topMenu.outerHeight() -414, //+90
-        menuItems = topMenu.find('a'),
-        scrollItems = menuItems.map(function(){
-            var item = $($(this).attr('href'));
-            if (item.length) { return item; }
-        });
-    console.log(topMenuHeight);
-
-    menuItems.click(function(e){
-        var href = $(this).attr('href'),
-            offsetTop = href === '#' ? 0 : $(href).offset().top - topMenuHeight;
-        $('html, body').stop().animate({
-            scrollTop: offsetTop
-        }, 1200);
-        e.preventDefault();
-    });
-
-    $(window).scroll(function(){
-        var fromTop = $(this).scrollTop()+topMenuHeight;
-        var cur = scrollItems.map(function(){
-            if ($(this).offset().top < fromTop)
-                return this;
-        });
-        cur = cur[cur.length-1];
-        var id = cur && cur.length ? cur[0].id : '';
-
-        if (lastId !== id) {
-            lastId = id;
-            menuItems
-                .parent().removeClass('active')
-                .end().filter("[href='#"+id+"']").parent().addClass("active");
-        }
-    });
+    // var lastId,
+    //     topMenu = $('#nav'),
+    //     topMenuHeight = topMenu.outerHeight() -414, //+90
+    //     menuItems = topMenu.find('a'),
+    //     scrollItems = menuItems.map(function(){
+    //         var item = $($(this).attr('href'));
+    //         if (item.length) { return item; }
+    //     });
+    // console.log(topMenuHeight);
+    //
+    // menuItems.click(function(e){
+    //     var href = $(this).attr('href'),
+    //         offsetTop = href === '#' ? 0 : $(href).offset().top - topMenuHeight;
+    //     $('html, body').stop().animate({
+    //         scrollTop: offsetTop
+    //     }, 1200);
+    //     e.preventDefault();
+    // });
+    //
+    // $(window).scroll(function(){
+    //     var fromTop = $(this).scrollTop()+topMenuHeight;
+    //     var cur = scrollItems.map(function(){
+    //         if ($(this).offset().top < fromTop)
+    //             return this;
+    //     });
+    //     cur = cur[cur.length-1];
+    //     var id = cur && cur.length ? cur[0].id : '';
+    //
+    //     if (lastId !== id) {
+    //         lastId = id;
+    //         menuItems
+    //             .parent().removeClass('active')
+    //             .end().filter("[href='#"+id+"']").parent().addClass("active");
+    //     }
+    // });
 
     // wow
     var wow = new WOW(
@@ -800,7 +800,7 @@ $(document).ready(function ($) {
             resetAnimation: true,     // reset animation on end (default is true)
         }
     );
-    wow.init();
+    // wow.init();
     //end wow
 
 
@@ -835,8 +835,9 @@ $(document).ready(function ($) {
     // build tween part 1
     var sect_tween = new TimelineMax()
 
-        .to(mainObject, .2, {background:'#0000ff'})
-        .to([sectoins, '.items-bubbles-wrap'], .15, {autoAlpha:'0'}, '0')
+        .to(mainObject, .01, {className:"+=blue-bg"})
+
+        .to(['#brokers .section-content', '.items-bubbles-wrap'], .15, {autoAlpha:'0'}, '0')
         .to('#brokers .section-content', .4, {autoAlpha:'1'}, '0')
         // .set('#header-mask-bg', {className: '-=loading'})
     ;
@@ -928,27 +929,27 @@ $(document).ready(function ($) {
 
 
     // build tween part 1.1
-    var sect_tween1_1 = new TimelineMax()
-
-
-        // .to('#brokers h2', 1, {ease: Power2.easeOut, y:0})
-        // .to('#brokers p', 1, {ease: Power2.easeInOut, y:0}, '-=.5')
-        // .to('#brokers .inline-btn', 1, {ease: Power2.easeInOut, y:0}
-
-
-        // .staggerTo(objects_broker_section, 1, {ease: Power2.easeOut, y:0}, '.5');
-
-
-    var scene1_1 = new ScrollMagic.Scene({
-        triggerElement: "#brokers",
-        triggerHook: trigerPosition
-
-    })
-
-        .setTween(sect_tween1_1)
-        // .addIndicators({name: "section1 content", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
-        // .reverse(false)
-        .addTo(controller);
+    // var sect_tween1_1 = new TimelineMax()
+    //
+    //
+    //     // .to('#brokers h2', 1, {ease: Power2.easeOut, y:0})
+    //     // .to('#brokers p', 1, {ease: Power2.easeInOut, y:0}, '-=.5')
+    //     // .to('#brokers .inline-btn', 1, {ease: Power2.easeInOut, y:0}
+    //
+    //
+    //     // .staggerTo(objects_broker_section, 1, {ease: Power2.easeOut, y:0}, '.5');
+    //
+    //
+    // var scene1_1 = new ScrollMagic.Scene({
+    //     triggerElement: "#brokers",
+    //     triggerHook: trigerPosition
+    //
+    // })
+    //
+    //     .setTween(sect_tween1_1)
+    //     .addIndicators({name: "section1 content", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
+    //     // .reverse(false)
+    //     .addTo(controller);
 
     // end build part 1.1
 
@@ -957,8 +958,9 @@ $(document).ready(function ($) {
     // build tween part 2
     var sect_tween2 = new TimelineMax()
 
-        .to(mainObject, .001, {background:'#040419'})
-        .to(sectoins, .3, {autoAlpha:'0'}, '0')
+        // .to(mainObject, .001, {background:'#040419'})
+        .to(mainObject, .01, {className:"+=dark-bg"})
+        // .to(sectoins, .3, {autoAlpha:'0'}, '0')
         .to('#multifamily .section-content', .3, {autoAlpha:'1'}, '0');
 
 
@@ -968,7 +970,7 @@ $(document).ready(function ($) {
     })
 
         .setTween(sect_tween2)
-        // .addIndicators({name: "section2",colorStart: "#FFFFFF"})
+        .addIndicators({name: "section2",colorStart: "#FFFFFF"})
         .addTo(controller);
 
     // end build part 2
@@ -1047,124 +1049,124 @@ $(document).ready(function ($) {
 
 
 
-    // build tween part 3
-    var sect_tween3 = new TimelineMax()
-
-        .to(mainObject, .001, {background:'#ffffff'})
-        .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#products .section-content', .3, {autoAlpha:'1'}, '0')
-        .to('#nav li  a', .05, {color: '#01173a',textShadow: '0px 0px 10px #ffffff'});
-
-
-    var scene3 = new ScrollMagic.Scene({
-        triggerElement: "#products",
-        triggerHook: trigerPosition,
-
-    })
-
-        .setTween(sect_tween3)
-        // .addIndicators({name: "section3", colorStart: "#ffffff", colorTrigger:"#000000"})
-        .addTo(controller);
-
-    // end build part 3
-
-
-
-    // build tween part 4 about Section
-    var sect_tween4 = new TimelineMax()
-
-        .to(mainObject, .001, {background:'#040419'})
-        .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#about .section-content', .3, {autoAlpha:'1'}, '0')
-        .to('#nav li  a', .05, {color: '#ffffff', textShadow: 'none'});
-
-
-    var scene4 = new ScrollMagic.Scene({
-        triggerElement: "#about",
-        triggerHook: trigerPosition
-    })
-
-        .setTween(sect_tween4)
-        // .addIndicators({name: "section4",colorStart: "#fff", colorTrigger:"#ffffff"})
-        .addTo(controller);
-
-    // end build part 4 about Section
-
-
-
-
-
-    // build tween part 5 our-news Section
-    var sect_tween5 = new TimelineMax()
-
-        .to(mainObject, .001, {background:'#ffffff'})
-        .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#our-news .section-content', .3, {autoAlpha:'1'}, '0')
-        .to('#nav li  a', .05, {color: '#01173a',textShadow: '0px 0px 10px #ffffff'});
-
-
-    var scene5 = new ScrollMagic.Scene({
-        triggerElement: "#our-news",
-        triggerHook: trigerPosition
-    })
-
-        .setTween(sect_tween5)
-        // .addIndicators({name: "section4",colorStart: "#fff", colorTrigger:"#ffffff"})
-        .addTo(controller);
-
-    // end build part 5 our-news Section
-
-
-
-    // build tween part 6 our Team Section
-    var sect_tween6 = new TimelineMax()
-
-        .to(mainObject, .001, {background:'#f4f7f9'})
-        .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#our-team-section .section-content', .3, {autoAlpha:'1'}, '0')
-        .to('#nav li  a', .05, {color: '#01173a',textShadow: '0px 0px 10px #ffffff'});
-
-
-    var scene6 = new ScrollMagic.Scene({
-        triggerElement: "#our-team-section",
-        triggerHook: trigerPosition
-    })
-
-        .setTween(sect_tween6)
-        // .addIndicators({name: "section4",colorStart: "#fff", colorTrigger:"#ffffff"})
-        .addTo(controller);
-
-    // end build part 6 our Team Section
-
-
-
-
-
-
-
-
-
-
-
-    // build tween part 7 footer Section
-    var sect_tween7 = new TimelineMax()
-
-        .to(mainObject, .001, {background:'#f4f7f9'})
-        .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#footer .section-content', .3, {autoAlpha:'1'}, '0')
-        .to('#nav li  a', .05, {color: '#01173a',textShadow: '0px 0px 10px #ffffff'});
-
-
-    var scene7 = new ScrollMagic.Scene({
-        triggerElement: "#footer",
-        triggerHook: trigerPosition
-    })
-
-        .setTween(sect_tween7)
-        // .addIndicators({name: "section4",colorStart: "#fff", colorTrigger:"#ffffff"})
-        .addTo(controller);
-
-    // end build part 7 footer Section
+    // // build tween part 3
+    // var sect_tween3 = new TimelineMax()
+    //
+    //     .to(mainObject, .001, {background:'#ffffff'})
+    //     .to(sectoins, .3, {autoAlpha:'0'}, '0')
+    //     .to('#products .section-content', .3, {autoAlpha:'1'}, '0')
+    //     .to('#nav li  a', .05, {color: '#01173a',textShadow: '0px 0px 10px #ffffff'});
+    //
+    //
+    // var scene3 = new ScrollMagic.Scene({
+    //     triggerElement: "#products",
+    //     triggerHook: trigerPosition,
+    //
+    // })
+    //
+    //     .setTween(sect_tween3)
+    //     // .addIndicators({name: "section3", colorStart: "#ffffff", colorTrigger:"#000000"})
+    //     .addTo(controller);
+    //
+    // // end build part 3
+    //
+    //
+    //
+    // // build tween part 4 about Section
+    // var sect_tween4 = new TimelineMax()
+    //
+    //     .to(mainObject, .001, {background:'#040419'})
+    //     .to(sectoins, .3, {autoAlpha:'0'}, '0')
+    //     .to('#about .section-content', .3, {autoAlpha:'1'}, '0')
+    //     .to('#nav li  a', .05, {color: '#ffffff', textShadow: 'none'});
+    //
+    //
+    // var scene4 = new ScrollMagic.Scene({
+    //     triggerElement: "#about",
+    //     triggerHook: trigerPosition
+    // })
+    //
+    //     .setTween(sect_tween4)
+    //     // .addIndicators({name: "section4",colorStart: "#fff", colorTrigger:"#ffffff"})
+    //     .addTo(controller);
+    //
+    // // end build part 4 about Section
+    //
+    //
+    //
+    //
+    //
+    // // build tween part 5 our-news Section
+    // var sect_tween5 = new TimelineMax()
+    //
+    //     .to(mainObject, .001, {background:'#ffffff'})
+    //     .to(sectoins, .3, {autoAlpha:'0'}, '0')
+    //     .to('#our-news .section-content', .3, {autoAlpha:'1'}, '0')
+    //     .to('#nav li  a', .05, {color: '#01173a',textShadow: '0px 0px 10px #ffffff'});
+    //
+    //
+    // var scene5 = new ScrollMagic.Scene({
+    //     triggerElement: "#our-news",
+    //     triggerHook: trigerPosition
+    // })
+    //
+    //     .setTween(sect_tween5)
+    //     // .addIndicators({name: "section4",colorStart: "#fff", colorTrigger:"#ffffff"})
+    //     .addTo(controller);
+    //
+    // // end build part 5 our-news Section
+    //
+    //
+    //
+    // // build tween part 6 our Team Section
+    // var sect_tween6 = new TimelineMax()
+    //
+    //     .to(mainObject, .001, {background:'#f4f7f9'})
+    //     .to(sectoins, .3, {autoAlpha:'0'}, '0')
+    //     .to('#our-team-section .section-content', .3, {autoAlpha:'1'}, '0')
+    //     .to('#nav li  a', .05, {color: '#01173a',textShadow: '0px 0px 10px #ffffff'});
+    //
+    //
+    // var scene6 = new ScrollMagic.Scene({
+    //     triggerElement: "#our-team-section",
+    //     triggerHook: trigerPosition
+    // })
+    //
+    //     .setTween(sect_tween6)
+    //     // .addIndicators({name: "section4",colorStart: "#fff", colorTrigger:"#ffffff"})
+    //     .addTo(controller);
+    //
+    // // end build part 6 our Team Section
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    // // build tween part 7 footer Section
+    // var sect_tween7 = new TimelineMax()
+    //
+    //     .to(mainObject, .001, {background:'#f4f7f9'})
+    //     .to(sectoins, .3, {autoAlpha:'0'}, '0')
+    //     .to('#footer .section-content', .3, {autoAlpha:'1'}, '0')
+    //     .to('#nav li  a', .05, {color: '#01173a',textShadow: '0px 0px 10px #ffffff'});
+    //
+    //
+    // var scene7 = new ScrollMagic.Scene({
+    //     triggerElement: "#footer",
+    //     triggerHook: trigerPosition
+    // })
+    //
+    //     .setTween(sect_tween7)
+    //     // .addIndicators({name: "section4",colorStart: "#fff", colorTrigger:"#ffffff"})
+    //     .addTo(controller);
+    //
+    // // end build part 7 footer Section
 
 
 
