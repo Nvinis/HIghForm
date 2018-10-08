@@ -837,8 +837,8 @@ $(document).ready(function ($) {
 
         .to(mainObject, .01, {className:"+=blue-bg"})
 
-        .to(['#brokers .section-content', '.items-bubbles-wrap'], .15, {autoAlpha:'0'}, '0')
-        .to('#brokers .section-content', .4, {autoAlpha:'1'}, '0')
+        // .to([sectoins, '.items-bubbles-wrap'], .15, {autoAlpha:'0'}, '0')
+        // .to('#brokers .section-content', .4, {autoAlpha:'1'}, '0')
         // .set('#header-mask-bg', {className: '-=loading'})
     ;
 
@@ -893,7 +893,8 @@ $(document).ready(function ($) {
             '#results-arrow',
             '#hamburger-pic'], {
             autoAlpha: 0,
-            transformOrigin:'50% 50%'
+            transformOrigin:'50% 50%',
+            willChange: 'transform'
         })
         .set('#circle-w-man-inside', {x: -100, y: 30})
         .set('#line-to-left-1', {y: 90})
@@ -929,27 +930,27 @@ $(document).ready(function ($) {
 
 
     // build tween part 1.1
-    // var sect_tween1_1 = new TimelineMax()
-    //
-    //
-    //     // .to('#brokers h2', 1, {ease: Power2.easeOut, y:0})
-    //     // .to('#brokers p', 1, {ease: Power2.easeInOut, y:0}, '-=.5')
-    //     // .to('#brokers .inline-btn', 1, {ease: Power2.easeInOut, y:0}
-    //
-    //
-    //     // .staggerTo(objects_broker_section, 1, {ease: Power2.easeOut, y:0}, '.5');
-    //
-    //
-    // var scene1_1 = new ScrollMagic.Scene({
-    //     triggerElement: "#brokers",
-    //     triggerHook: trigerPosition
-    //
-    // })
-    //
-    //     .setTween(sect_tween1_1)
-    //     .addIndicators({name: "section1 content", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
-    //     // .reverse(false)
-    //     .addTo(controller);
+    var sect_tween1_1 = new TimelineMax()
+
+
+        // .to('#brokers h2', 1, {ease: Power2.easeOut, y:0})
+        // .to('#brokers p', 1, {ease: Power2.easeInOut, y:0}, '-=.5')
+        // .to('#brokers .inline-btn', 1, {ease: Power2.easeInOut, y:0}
+
+
+        // .staggerTo(objects_broker_section, 1, {ease: Power2.easeOut, y:0}, '.5');
+
+
+    var scene1_1 = new ScrollMagic.Scene({
+        triggerElement: "#brokers",
+        triggerHook: trigerPosition
+
+    })
+
+        .setTween(sect_tween1_1)
+        .addIndicators({name: "section1 content", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
+        // .reverse(false)
+        .addTo(controller);
 
     // end build part 1.1
 
@@ -961,7 +962,7 @@ $(document).ready(function ($) {
         // .to(mainObject, .001, {background:'#040419'})
         .to(mainObject, .01, {className:"+=dark-bg"})
         // .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#multifamily .section-content', .3, {autoAlpha:'1'}, '0');
+        // .to('#multifamily .section-content', .3, {autoAlpha:'1'}, '0');
 
 
     var scene2 = new ScrollMagic.Scene({
