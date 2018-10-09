@@ -1,34 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="&lt;g id=&quot;screen-wrap&quot;&gt;" line="487" />
-    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="&lt;g class=&quot;cls-3&quot; id=&quot;line-to-left-1&quot;&gt;" line="599" />
-    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="&lt;g class=&quot;cls-3&quot; id=&quot;line-to-right-1&quot;&gt;" line="457" />
-    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="&lt;polygon class=&quot;cls-13&quot;" line="508" />
-    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="&lt;g id=&quot;sold-house&quot;&gt;" line="507" />
-    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="results-arrow" line="570" />
-    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="&lt;g id=&quot;lease-pic&quot;&gt;" line="866" />
-    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="height=&quot;382.42&quot;" line="802" />
-    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="&lt;g id=&quot;face-item-1&quot;&gt;" line="897" />
-    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/js/ilustrationScene.js" line="109" />
-    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="                        &lt;p class=&quot;col-md-7 offset-..." line="1823" />
+    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="&lt;g id=&quot;screen-wrap&quot;&gt;" line="504" />
+    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="&lt;g class=&quot;cls-3&quot; id=&quot;line-to-left-1&quot;&gt;" line="616" />
+    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="&lt;g class=&quot;cls-3&quot; id=&quot;line-to-right-1&quot;&gt;" line="474" />
+    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="&lt;polygon class=&quot;cls-13&quot;" line="525" />
+    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="&lt;g id=&quot;sold-house&quot;&gt;" line="524" />
+    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="results-arrow" line="587" />
+    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/js/ilustrationScene.js" line="89" />
+    <bookmark url="file://$PROJECT_DIR$/webbox.top/hfnew/index.html" description="                        &lt;p class=&quot;col-md-7 offset-..." line="1583" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b2a7f0a-1e7f-47ee-ada3-89b53fa75d89" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webbox.top/hfnew/images/gradient-el_1@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webbox.top/hfnew/images/arrow-point-to-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webbox.top/hfnew/images/mask--bg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webbox.top/hfnew/images/mask--bgL.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webbox.top/hfnew/images/sociall-bg.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webbox.top/hfnew/js/ScrollToPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webbox.top/hfnew/js/smoothPageScroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webbox.top/hfnew/images/hover.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webbox.top/hfnew/images/ourResultsSvg.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webbox.top/hfnew/images/ourResultsSvg_1.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webbox.top/hfnew/images/ourResultsSvg_2.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webbox.top/hfnew/js/SplitText.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webbox.top/hfnew/css/responsive.css" afterPath="$PROJECT_DIR$/webbox.top/hfnew/css/responsive.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webbox.top/hfnew/css/style.css" afterPath="$PROJECT_DIR$/webbox.top/hfnew/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webbox.top/hfnew/index.html" afterPath="$PROJECT_DIR$/webbox.top/hfnew/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webbox.top/hfnew/index2.html" afterPath="$PROJECT_DIR$/webbox.top/hfnew/index2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webbox.top/hfnew/js/ilustrationScene.js" afterPath="$PROJECT_DIR$/webbox.top/hfnew/js/ilustrationScene.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webbox.top/hfnew/js/main.js" afterPath="$PROJECT_DIR$/webbox.top/hfnew/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webbox.top/hfnew/js/main2.js" afterPath="$PROJECT_DIR$/webbox.top/hfnew/js/main2.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,10 +37,23 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="250" column="15" lean-forward="false" selection-start-line="250" selection-start-column="15" selection-end-line="250" selection-end-column="15" />
+            <state relative-caret-position="608">
+              <caret line="278" column="17" lean-forward="true" selection-start-line="278" selection-start-column="17" selection-end-line="278" selection-end-column="17" />
               <folding>
-                <marker date="1539028441000" expanded="true" signature="3593:3635" ph="..." />
+                <marker date="1539115848000" expanded="true" signature="3600:3642" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="450" column="26" lean-forward="false" selection-start-line="450" selection-start-column="26" selection-end-line="450" selection-end-column="26" />
+              <folding>
+                <element signature="e#3876#4109#0" expanded="false" />
+                <element signature="e#4111#4186#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -55,33 +62,18 @@
       <file leaf-file-name="ilustrationScene.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/ilustrationScene.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="136" column="34" lean-forward="true" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
+            <state relative-caret-position="386">
+              <caret line="107" column="21" lean-forward="false" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-              <folding>
-                <element signature="e#3931#4164#0" expanded="false" />
-                <element signature="e#4166#4241#0" expanded="false" />
-                <element signature="e#7244#7472#0" expanded="false" />
-                <element signature="e#7474#7549#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="2555" column="30" lean-forward="true" selection-start-line="2555" selection-start-column="30" selection-end-line="2555" selection-end-column="30" />
+            <state relative-caret-position="996">
+              <caret line="429" column="45" lean-forward="true" selection-start-line="429" selection-start-column="45" selection-end-line="429" selection-end-column="45" />
               <folding>
                 <element signature="n#svg#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -131,25 +123,12 @@
                 <element signature="n#style#0;n#div#43;n#div#1;n#div#1;n#header#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#44;n#div#1;n#div#1;n#header#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#45;n#div#1;n#div#1;n#header#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#image#0;n#g#0;n#g#0;n#g#3;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#g#0;n#g#5;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#g#0;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#image#0;n#g#0;n#g#0;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#image#0;n#g#2;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#image#0;n#g#3;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#g#4;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#image#0;n#g#0;n#g#4;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#g#5;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#image#0;n#g#0;n#g#5;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#g#0;n#g#6;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#path#2;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#5;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#7;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#section#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#section#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#form#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
@@ -167,36 +146,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>60</find>
-      <find>class=&quot;sub-title text-center col-5 px-md-5 d-inline-block ff-light&quot;</find>
-      <find>Brokerage Solutions</find>
-      <find>Apartment Marketing</find>
-      <find>class=&quot;inline-btn d-inline-flex align-items-center ff-semibold fs-mid text-white project__detail&quot;</find>
+      <find>multifamilyPic</find>
+      <find>our-news</find>
       <find>footer</find>
-      <find>Visit our blog</find>
-      <find>Start a project</find>
-      <find>btn--text</find>
-      <find>f41f52</find>
-      <find>222</find>
-      <find>#main</find>
+      <find>.cls</find>
+      <find>transform=&quot;translate(0 295)&quot;</find>
+      <find>#ourResultsPic .cls-8{</find>
+      <find>class=&quot;cls-59&quot;</find>
+      <find>Безымянный_градиент</find>
+      <find>height=&quot;335.55&quot;</find>
+      <find>d=&quot;M540.48,187.27a4.9,4</find>
+      <find>val--logos</find>
+      <find>our-team-section</find>
+      <find>val--logos1</find>
+      <find>translate(818.61 96.55)</find>
+      <find>transform=&quot;translate(1190.21 247.24)&quot;</find>
+      <find>cx=&quot;760.47&quot;</find>
+      <find>x2=&quot;760.47&quot;</find>
+      <find>cx=&quot;382.87&quot;</find>
+      <find>cx=&quot;1141.87&quot;</find>
+      <find>M1230.19,191.16V176.85c0-1.6-1-1.72-2.23-1.73s-2.22.14-2.21,1.74v14.31c0,1.61,1.05,1.7,2.24,1.71S1230.24,192.77,1230.19,191.16Z</find>
+      <find>M825.56,42.63h3.37a23.3,23.3,0,0,0,2.63-.21c2.45-.26,3-1.1,3.26-3.35v-.33c0-.08.27-.44.44-.46s.36.21.36.5q0,2.15,0,4.29c0,.36-.11.51-.49.5l-9.89-.14q-2.2,0-4.4-.11a3,3,0,0,1-.67-.18V42.9a15.23,15.23,0,0,1,1.6-.24c.56,0,.75-.31.75-.81V25.69c0-.63-.17-.78-.8-.78a5.74,5.74,0,0,1-1.07,0c-.17,0-.31-.26-.46-.4.18-.09.36-.26.55-.27h1.52l4.8-.07a1.27,1.27,0,0,1,.5.08c.11,0,.19.18.29.28-.1.09-.18.25-.29.27a7.34,7.34,0,0,1-1.11.12c-.72,0-.85.14-.85.85q0,6.44,0,12.88C825.56,39.91,825.56,41.19,825.56,42.63Z</find>
+      <find>.cls-82</find>
+      <find>&quot;cls-82</find>
       <find>products</find>
-      <find>blue-btn btn d-inline-flex align-items-center ff-semibold fs-big text-white send-btn inline-btn justify-content-center</find>
-      <find>footer-form</find>
-      <find>#multifamily</find>
-      <find>multifamily</find>
-      <find>href=&quot;#multifamily&quot;</find>
-      <find>section-content row justify-content-center z-9 position-absolute</find>
-      <find>Back-Office</find>
-      <find>Property Websites</find>
-      <find>Transaction Management</find>
-      <find>760px</find>
-      <find>Mapping</find>
-      <find>Market Research</find>
-      <find>Mobile Apps</find>
-      <find>SEO</find>
-      <find>Lead Conversion</find>
-      <find>IDX/RETS</find>
-      <find>Real Estate</find>
+      <find>learn more</find>
+      <find>id=&quot;multifamilyPic&quot;</find>
+      <find>sub-menu</find>
+      <find>.main-nav&gt;li.active .sub-menu</find>
+      <find>brokers</find>
+      <find>class=&quot;listener-contained&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -204,8 +183,10 @@
       <replace>items-bubbles</replace>
       <replace>#multifamilyPic .cls</replace>
       <replace>#brokersPic .cls</replace>
-      <replace>#ourResultsPic .cls</replace>
       <replace>#ourTeam .cls</replace>
+      <replace>#ourResultsPic .cls</replace>
+      <replace>noname-gradient</replace>
+      <replace>noname__gradient</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -239,7 +220,6 @@
         <option value="$PROJECT_DIR$/webbox.top/hfnew/images/ourResultsPic_1.svg" />
         <option value="$PROJECT_DIR$/webbox.top/hfnew/images/ourTeam.svg" />
         <option value="$PROJECT_DIR$/webbox.top/hfnew/images/selectArwDown.svg" />
-        <option value="$PROJECT_DIR$/webbox.top/hfnew/index2.html" />
         <option value="$PROJECT_DIR$/webbox.top/hfnew/images/logo.svg" />
         <option value="$PROJECT_DIR$/webbox.top/hfnew/images/sociall-bg.svg" />
         <option value="$PROJECT_DIR$/webbox.top/hfnew/js/menuTween.js" />
@@ -248,11 +228,19 @@
         <option value="$PROJECT_DIR$/webbox.top/hfnew/css/responsive.css" />
         <option value="$PROJECT_DIR$/webbox.top/hfnew/images/mask--bg.svg" />
         <option value="$PROJECT_DIR$/webbox.top/hfnew/images/mask--bgL.svg" />
-        <option value="$PROJECT_DIR$/webbox.top/hfnew/js/ilustrationScene.js" />
         <option value="$PROJECT_DIR$/webbox.top/hfnew/images/arrow-point-to-right.svg" />
-        <option value="$PROJECT_DIR$/webbox.top/hfnew/css/style.css" />
-        <option value="$PROJECT_DIR$/webbox.top/hfnew/index.html" />
+        <option value="$PROJECT_DIR$/webbox.top/hfnew/js/test.js" />
+        <option value="$PROJECT_DIR$/webbox.top/hfnew/js/test2.js" />
+        <option value="$PROJECT_DIR$/webbox.top/hfnew/images/ourResultsSvg.svg" />
+        <option value="$PROJECT_DIR$/webbox.top/hfnew/images/ourResultsSvg_1.svg" />
+        <option value="$PROJECT_DIR$/webbox.top/hfnew/images/ourResultsSvg_2.svg" />
+        <option value="$PROJECT_DIR$/webbox.top/hfnew/images/hover.svg" />
+        <option value="$PROJECT_DIR$/webbox.top/hfnew/index2.html" />
+        <option value="$PROJECT_DIR$/webbox.top/hfnew/js/jquery.plate.js" />
         <option value="$PROJECT_DIR$/webbox.top/hfnew/js/main.js" />
+        <option value="$PROJECT_DIR$/webbox.top/hfnew/index.html" />
+        <option value="$PROJECT_DIR$/webbox.top/hfnew/css/style.css" />
+        <option value="$PROJECT_DIR$/webbox.top/hfnew/js/ilustrationScene.js" />
       </list>
     </option>
   </component>
@@ -400,8 +388,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/webbox.top/hfnew/images" />
       <recent name="$PROJECT_DIR$/webbox.top/hfnew/js" />
+      <recent name="$PROJECT_DIR$/webbox.top/hfnew/images" />
       <recent name="$PROJECT_DIR$/webbox.top/hfnew/css" />
       <recent name="$PROJECT_DIR$/webbox.top/hfnew" />
       <recent name="$PROJECT_DIR$/webbox.top/hfnew/fonts" />
@@ -513,12 +501,12 @@
       <workItem from="1538767809229" duration="8438000" />
       <workItem from="1538816403070" duration="13898000" />
       <workItem from="1538928173535" duration="6633000" />
-      <workItem from="1539011173721" duration="8230000" />
+      <workItem from="1539011173721" duration="30830000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191988000" />
+    <option name="totallyTimeSpent" value="214588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2436" height="1417" extended-state="0" />
@@ -594,50 +582,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/fancy-buttons.min.js" />
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/fancy-buttons.js" />
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/jquery.plate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/itemProduct1Bg.svg" />
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/pic1Product.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="109" lean-forward="false" selection-start-line="0" selection-start-column="106" selection-end-line="0" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/pic2Product.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="0" column="3777" lean-forward="false" selection-start-line="0" selection-start-column="3777" selection-end-line="0" selection-end-column="3777" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/pic3Product.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="0" column="2386" lean-forward="false" selection-start-line="0" selection-start-column="2386" selection-end-line="0" selection-end-column="2386" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/DrawSVGPlugin.min.js" />
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/test.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="5660" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/universal-tilt.min.js" />
     <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/arcBg.png">
       <provider selected="true" editor-type-id="images">
@@ -789,13 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="911">
-          <caret line="174" column="30" lean-forward="true" selection-start-line="174" selection-start-column="8" selection-end-line="174" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/manTopIcon.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -888,28 +830,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/ilustrationScene.js">
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/test2">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="136" column="34" lean-forward="true" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/test2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="229" column="15" lean-forward="true" selection-start-line="229" selection-start-column="15" selection-end-line="229" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="249" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="249" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/SplitText.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="12" column="4218" lean-forward="true" selection-start-line="12" selection-start-column="4218" selection-end-line="12" selection-end-column="4218" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/ourResultsSvg.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="57" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/ourResultsSvg_1.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="57" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/ourResultsSvg_2.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="168" column="50" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="628" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="996">
+          <caret line="840" column="86" lean-forward="true" selection-start-line="838" selection-start-column="12" selection-end-line="840" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/hover.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="61" column="76" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="631" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/jquery.plate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="250" column="15" lean-forward="false" selection-start-line="250" selection-start-column="15" selection-end-line="250" selection-end-column="15" />
+        <state relative-caret-position="608">
+          <caret line="278" column="17" lean-forward="true" selection-start-line="278" selection-start-column="17" selection-end-line="278" selection-end-column="17" />
           <folding>
-            <marker date="1539028441000" expanded="true" signature="3593:3635" ph="..." />
+            <marker date="1539115848000" expanded="true" signature="3600:3642" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="450" column="26" lean-forward="false" selection-start-line="450" selection-start-column="26" selection-end-line="450" selection-end-column="26" />
+          <folding>
+            <element signature="e#3876#4109#0" expanded="false" />
+            <element signature="e#4111#4186#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/ilustrationScene.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="107" column="21" lean-forward="false" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="2555" column="30" lean-forward="true" selection-start-line="2555" selection-start-column="30" selection-end-line="2555" selection-end-column="30" />
+        <state relative-caret-position="996">
+          <caret line="429" column="45" lean-forward="true" selection-start-line="429" selection-start-column="45" selection-end-line="429" selection-end-column="45" />
           <folding>
             <element signature="n#svg#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -959,39 +992,13 @@
             <element signature="n#style#0;n#div#43;n#div#1;n#div#1;n#header#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#44;n#div#1;n#div#1;n#header#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#45;n#div#1;n#div#1;n#header#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#image#0;n#g#0;n#g#0;n#g#3;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#g#0;n#g#5;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#g#0;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#image#0;n#g#0;n#g#0;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#image#0;n#g#2;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#image#0;n#g#3;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#g#4;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#image#0;n#g#0;n#g#4;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#g#5;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#image#0;n#g#0;n#g#5;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#g#0;n#g#6;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#path#2;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#g#5;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#g#7;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#section#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#section#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding>
-            <element signature="e#3931#4164#0" expanded="false" />
-            <element signature="e#4166#4241#0" expanded="false" />
-            <element signature="e#7244#7472#0" expanded="false" />
-            <element signature="e#7474#7549#0" expanded="false" />
           </folding>
         </state>
       </provider>

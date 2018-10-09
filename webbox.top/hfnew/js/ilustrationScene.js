@@ -1,54 +1,34 @@
 
-// var sect_tween = new TimelineMax()
-//
-//     .set('#header-mask-bg', {className: '-=loading'})
-//
-//     .staggerFromTo('#line-to-left-1 path', 1, {drawSVG:"0%"}, {drawSVG:"50% 50%"}, 0.5)
-// ;
-//
-// var scene = new ScrollMagic.Scene({
-//     triggerElement: "#brokers",
-//     triggerHook: trigerPosition
-//     // duration: "100%"
-//
-// })
-//
-//     .setTween(sect_tween)
-//     .addIndicators({name: "section1 ", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
-//     .addTo(controller);
 
 // end build part 1
-// var tween_4 = new TimelineMax({delay: 2});
+// var tween_4 = new TimelineMax({delay: 1.5});
 // var time_del = .4;
 //
 //     tween_4
-//     .set(['#circle-w-man-inside',
-//         '#screen-wrap',
-//         '#line-to-left-1',
-//         '#line-to-right-1',
-//         '#sold-house',
-//         '#line-to-down-1',
-//         '#results-arrow',
-//         '#hamburger-pic'], {
-//         autoAlpha: 0,
-//         transformOrigin:'50% 50%'
+//     .set(['#grid--lines', '.logo___wrap'
+//
+//        ], {
+//         autoAlpha: 0
 //     })
-//     .set('#circle-w-man-inside', {x: -100, y: 30})
-//     .set('#line-to-left-1', {y: 90})
-//     .set('#line-to-right-1', {x: -150})
-//     .set('#sold-house', {scale: 0})
-//     .set('#line-to-down-1', {x: -140, rotationX: 160})
-//     .set('#hamburger-pic', {scale:0, x:-300})
+//
+//         .set(['.val--logos1', '.val--logos2', '.val--logos3'], {y:-40, opacity:0})
+//     .set(['#ourResultsPic .cls-80', '#ourResultsPic .cls-81', '#ourResultsPic .cls-82'], {transformOrigin: '50%' +
+//         ' 50%',scaleY:0})
+//         .set(['.pint--point circle', '.pint--point2 circle', '.pint--point3 circle'], {transformOrigin: '50% 50%', scale: 0})
+//         .set(['.pint--point circle', '.pint--point2 circle', '.pint--point3 circle'], {transformOrigin: '50% 50%', scale: 0})
 //
 //
-//     .to('#circle-w-man-inside', time_del, {ease: Power1.easeIn, autoAlpha:1, x:0, y:0})
-//     .to('#line-to-left-1', time_del, {ease: Power1.easeIn, autoAlpha:1, y:0}, '-='+time_del/2)
-//     .to('#screen-wrap', time_del, {ease: Power1.easeIn, autoAlpha:1}, '-='+time_del/2)
-//     .to('#line-to-right-1', time_del, {ease: Power1.easeIn, autoAlpha:1, x:0}, '-='+time_del/2)
-//     .to('#sold-house', time_del, {ease: Back.easeOut.config(2), autoAlpha:1, scale:1}, '-='+time_del/4)
-//     .to('#line-to-down-1', time_del, {ease: Power1.easeIn ,autoAlpha:1, x:0}, '-='+time_del/2.5)
-//     .to('#results-arrow', time_del, {ease: Power1.easeIn, autoAlpha:1}, '-='+time_del/3.5)
-//     .to('#hamburger-pic', time_del, {ease: Power1.easeIn, autoAlpha:1,scale:1,x:0},'-='+time_del/2);
+//
+//     .to('#grid--lines', time_del, {ease: Power1.easeIn, autoAlpha:1})
+//     .to('#masck--darck', 1.5, {ease: Power1.easeInOut, xPercent: 105})
+//     .to(['#ourResultsPic .cls-80',  '#ourResultsPic .cls-81', '#ourResultsPic .cls-82'], .5, {scaleY:1}, '-=0.5')
+//     .staggerTo('.pint--point circle', time_del, {ease: Back.easeOut.config(1.9), scale:1}, .2, '-=0.3')
+//     .staggerTo('.pint--point2 circle', time_del, {ease: Back.easeOut.config(1.9), scale:1}, .2, '-=1')
+//     .staggerTo('.pint--point3 circle', time_del, {ease: Back.easeOut.config(1.9), scale:1}, .2, '-=1')
+//     .to('.logo___wrap', time_del*2, {ease: Power4.easeIn, autoAlpha:1}, '-=.5')
+// ;
+
+
 //
 //
 // var tween_2 = new TimelineMax({delay: 1});
@@ -123,10 +103,15 @@ TweenMax.set(".items-bubbles", {
         return i * -15;
     }
 });
+TweenMax.set(".items-bubbles", {
+    x:function(d) {
+        return d * 30;
+    }
+});
 TweenMax.set(".bbl", {
     y:function(i) {
         return i * 23;
-    },
+    }
 
     // scale:function (z) {
     //     return z * .25;
@@ -134,17 +119,39 @@ TweenMax.set(".bbl", {
 })
 
 
-tween_2.to(".items-bubbles", 30, {
-    ease: Linear.easeNone,
-    y: "-=680",
-    scale: 1,
-    modifiers: {
-        y: function(x) {
-            return x % 680;
-        }
-    },
-    repeat: -1
-})
+// tween_2.to(".items-bubbles", 30, {
+//     ease: Linear.easeNone,
+//     y: "-=680",
+//     scale: 1,
+//     modifiers: {
+//         y: function(x) {
+//             return x % 680 ;
+//             // return Math.random() *99;
+//         }
+//     },
+//     repeat: -1
+// })
+
+
+// tween_2
+//     .to(".items-bubbles", 30, {
+//
+//     // duration = distance / pixelsPerSecond
+//
+//
+//         ease: Linear.easeNone,
+//     y: "-=680",
+//
+//
+//     modifiers: {
+//         y: function(x) {
+//             return x % 680 ;
+//         }
+//     },
+//     repeat: -1
+//
+// }, 0.01)
+
 
 .to(".bbl", 5, {
     ease: Linear.easeNone,
@@ -158,12 +165,6 @@ tween_2.to(".items-bubbles", 30, {
 }, 0)
 
 // .staggerFromTo('.bbl', 4, {scale:.3}, {scale:1, repeat: -1}, .2, 0 )
-
-
-
-
-
-
 
 ;
 
@@ -182,8 +183,35 @@ $('.inline-btn, .listener-contained').mouseleave(function(){
 
         .to(bg__line, .4, {xPercent: 400})
         .set(bg__line,  {xPercent: -110});
+});
+
+$('#dominica__logo').mouseenter(function(){
+    TweenMax.staggerTo('.val--logos1', .8, {opacity:1, y:0}, .2);
+});
+
+$('#dominica__logo').mouseleave(function(){
+    TweenMax.staggerTo('.val--logos1', .8, {opacity:0, y:-40}, .2);
 
 });
+
+$('#launch__logo').mouseenter(function(){
+    TweenMax.staggerTo('.val--logos2', .8, {opacity:1, y:0}, .2);
+});
+
+$('#launch__logo').mouseleave(function(){
+    TweenMax.staggerTo('.val--logos2', .8, {opacity:0, y:-40}, .2);
+
+});
+
+$('#wiliams__logo').mouseenter(function(){
+    TweenMax.staggerTo('.val--logos3', .8, {opacity:1, y:0}, .2);
+});
+
+$('#wiliams__logo').mouseleave(function(){
+    TweenMax.staggerTo('.val--logos3', .8, {opacity:0, y:-40}, .2);
+
+});
+
 // TweenMax.to(".items-bubbles:nth-child(even)", 6, {
 //     ease: Linear.easeNone,
 //     x: "+=7",
