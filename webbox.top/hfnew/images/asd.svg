@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="795" viewBox="0 0 1800 795">
+    <defs>
+        <style>.cls-1{fill:#020320;}</style>
+    </defs>
+
+    <path id="mask-end" class="cls-1"
+          d="M0,0V795l227,0c-.39-63,4.45-360.67,235.16-581.07C512.81,165.51,665.54,19.6,900,16.63c236.21-3,393.51,141.15,440.11,183.85,243.94,223.53,240.82,540,239.4,594.37L1800,795V0Z"/>
+    <rect id="mask-start" class="cls-1" width="1800" height="794.96"/>
+
+
+</svg>

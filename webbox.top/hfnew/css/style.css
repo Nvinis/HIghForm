@@ -135,14 +135,36 @@ button, a {
 	min-height: 100vh;
 }
 #header-mask-bg {
-	display: none;
+	opacity: 0;
+	visibility: hidden;
 	bottom: 0;
 	left: 0;
+	right: 0;
+	margin: auto;
 	width: 100%;
+	/*max-width: 1350px;*/
 	height: 50vh;
-	background: url(../images/mask--bgL.svg) center top no-repeat;
+	/*background: url(../images/mask--bgL.svg) center top no-repeat;*/
 	/*background-size: cover;*/
 }
+#header-mask-bg svg {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+}
+/*#header-mask-bg:before,*/
+/*#header-mask-bg:after {*/
+	/*width: 1000px;*/
+	/*height: 100%;*/
+	/*background: #020320;*/
+/*}*/
+/*#header-mask-bg:before {*/
+	/*left: -990px;*/
+/*}*/
+/*#header-mask-bg:after {*/
+	/*right: -990px;*/
+/*}*/
 .head-content h1 {
 	font-size: 60px;
 	line-height: 1;
@@ -159,7 +181,7 @@ button, a {
 	position: relative;
 	width: 13px;
 	top: 20px;
-	height: 60px;
+	height: 70px;
 	margin: 0 auto -40px;
 	overflow: hidden;
 }
@@ -251,17 +273,34 @@ button, a {
 	height: 100%;
 	opacity: 0;
 }
+#first-text {
+	top: -5px;
+	text-align: center;
+	width: 100%;
+	left: 0;
+}
+#header .hidden--start {
+	opacity: 0;
+	visibility: hidden;
+}
 #header .section-content {
+	opacity: 1;
 	left: 0;
 	/*top: 0;*/
 	/*margin: auto;*/
-	opacity: 1;
 	bottom: -55px;
 	height: 460px;
 }
 #header .sub-title {
 	color: #4e5f83;
 	margin-bottom: 0;
+}
+#header .hero-title {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: scale(.9);
+	-ms-transform: scale(.9);
+	transform: scale(.9);
 }
 .sub-title {
 	font-size: 24px;
@@ -278,13 +317,52 @@ button, a {
 	/*max-width: 1340px;*/
 	margin: auto;
 	/*background: url(../images/arcBg.png) center 90px no-repeat;*/
-	background: url(../images/gradient-el_1@2x.png) center bottom no-repeat;
+	background: url(../images/gradient-el_1@2x.png)  no-repeat;
+	background-position: center -500px;
 	background-size: cover;
 }
-.bubbles--wrap {
+.bubbles--wrap,
+.bubbles-in-wrap {
 	overflow: hidden;
 	height: 100%;
 	width: 100%;
+}
+.bubbles--wrap:before,
+.bubbles--wrap:after,
+.wrap-bbls-to-down:before,
+.wrap-bbls-to-down:after {
+	width: 100%;
+	height: 40px;
+	left: 0;
+	z-index: 1;
+}
+.wrap-bbls-to-down:before,
+.wrap-bbls-to-down:after {
+	height: 10px;
+}
+.bubbles--wrap:before,
+.wrap-bbls-to-down:before {
+	top: 0;
+	background: rgba(2,3,32,1);
+	background: -moz-linear-gradient(top, rgba(2,3,32,1) 0%, rgba(2,3,32,0) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(2,3,32,1)), color-stop(100%, rgba(2,3,32,0)));
+	background: -webkit-linear-gradient(top, rgba(2,3,32,1) 0%, rgba(2,3,32,0) 100%);
+	background: -o-linear-gradient(top, rgba(2,3,32,1) 0%, rgba(2,3,32,0) 100%);
+	background: -ms-linear-gradient(top, rgba(2,3,32,1) 0%, rgba(2,3,32,0) 100%);
+	background: linear-gradient(to bottom, rgba(2,3,32,1) 0%, rgba(2,3,32,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020320', endColorstr='#020320', GradientType=0 );
+}
+.bubbles--wrap:after,
+.wrap-bbls-to-down:after {
+	bottom: 0;
+	background: rgba(2,3,32,0);
+	background: -moz-linear-gradient(top, rgba(2,3,32,0) 0%, rgba(2,3,32,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(2,3,32,0)), color-stop(100%, rgba(2,3,32,1)));
+	background: -webkit-linear-gradient(top, rgba(2,3,32,0) 0%, rgba(2,3,32,1) 100%);
+	background: -o-linear-gradient(top, rgba(2,3,32,0) 0%, rgba(2,3,32,1) 100%);
+	background: -ms-linear-gradient(top, rgba(2,3,32,0) 0%, rgba(2,3,32,1) 100%);
+	background: linear-gradient(to bottom, rgba(2,3,32,0) 0%, rgba(2,3,32,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020320', endColorstr='#020320', GradientType=0 );
 }
 .items-bubbles-wrap:after {
 	width: 100%;
@@ -294,6 +372,7 @@ button, a {
 	z-index: -1;
 	background: url(../images/dotsBg.svg) center bottom no-repeat;
 }
+
 .items-bubbles {
 	position: absolute;
 	padding: 5px 20px;
@@ -313,7 +392,8 @@ button, a {
 	user-select: none;
 	font-size:14px;
 	height: 30px;
-	top: 680px;
+	top: 700px;
+	left: -100px;
 	/*z-index: 99;*/
 }
 .items-bubbles--blue {

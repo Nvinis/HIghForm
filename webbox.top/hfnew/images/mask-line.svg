@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1801" height="661" viewBox="0 0 1801 661">
+    <defs>
+        <style>.cls-1{fill:none;stroke:#d12a6e;stroke-miterlimit:10;}</style>
+    </defs>
+    <title>mask-line</title>
+
+            <path id="mask-end" class="cls-1"
+                  d="M.5.5v660l227,0c-.39-52.3,4.45-299.42,235.16-482.4C513.31,137.9,666,16.77,900.5,14.31c236.21-2.48,393.51,117.18,440.11,152.63,243.94,185.58,240.82,448.3,239.4,493.44l220.49.12V.5Z"/>
+
+</svg>
