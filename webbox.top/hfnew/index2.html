@@ -132,60 +132,108 @@
         width: 100%;
         height: auto;
     }
+    .wrap {
+        width: 1000px;
+        margin: 50px auto;
+        font-family: georgia, serif;
+        background-color: cornsilk;
+        padding: 20px 30px;
+    }
+
+    div.tooltip-item {
+        background-color: orange;
+        width: 450px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 8px;
+        margin: 60px 10px;
+    }
+
+    .tooltip-item {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .tooltip-item:after {
+        content: attr(data-message);
+        position: absolute;
+        left: 105%;
+        white-space: nowrap;
+        display: none;
+        font-size: 1.2rem;
+        background-color: rgba(230, 230, 230, 0.6);
+        padding: 10px 20px;
+        border-radius: 16px;
+        font-family: Tahoma, Verdana, Segoe, sans-serif;
+        font-weight: normal;
+    }
+
+    div.tooltip-item:after {
+        text-transform: uppercase;
+    }
+
+    h1.tooltip-item:after {
+        background-color: cyan;
+        color: #ff14ec;
+        font-weight: 800;
+        border-radius: 20px;
+        box-shadow: 6px 6px 9px #969696;
+    }
+
+    p.tooltip-item:after {
+        background-color: #232323;
+        color: #efefef;
+        font-weight: 800;
+        border-radius: 6px;
+        box-shadow: 0 0 0 grey;
+    }
 </style>
 <body>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="2562" height="798" viewBox="0 0 2562 798">
-    <defs>
-        <style>.cls-1{fill: rgba(255, 255, 255, 0);stroke: #ff0c33;stroke-miterlimit:10;stroke-width:2px;}</style>
-    </defs>
+<div class="wrap">
+    <h1 class="tooltip-item" data-message="You are hovering the h1-element.">Demo Page - Tooltip following the Mouse-Pointer</h1>
+    <div class="tooltip-item" data-message="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."></div>
+    <p class="tooltip-item" data-message="Paragraph-element with a tooltip attached to it.">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
 
 
-    <path id="mask-end" class="cls-1"
-          d="M1286.67,16.83C983.79,17.12,799.78,249.9,746,327.5c-150,236-130,469-130,469L1,797V1.5L2561,1V796.5H1945v-.33c0-58.45,10.2-295.87-137.76-499.84C1716,168,1531.16,16.6,1286.67,16.83Z"/>
+    <div class="test">testtttt</div>
+</div>
 
-</svg>
-
-<script src="js/jquery-2.1.0.min.js"></script>
-<!--<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/poper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/TweenMax.min.js"></script>
-<!--<script src="js/DrawSVGPlugin.min.js"></script>-->
-<script src="js/BezierPlugin.min.js"></script>
-<script src="js/ScrollToPlugin.min.js"></script>
-<script src="js/DrawSVGPlugin.min.js"></script>
-
-<script src="js/ModifiersPlugin.min.js"></script>
-<!--<script src="js/SplitText.min.js"></script>-->
-<script src="js/MorphSVGPlugin.min.js"></script>
-
-<script src="js/animateJs.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/ScrollMagic.min.js"></script>
-<script src="js/sceneTween.js"></script>
-<script src="js/jquery.plate.js"></script>
-<!--<script src="js/universal-tilt.js"></script>-->
-<script src="js/jquery.hover3d.js"></script>
-
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/findShapeIndex.js"></script>
-<!--<script src="js/smoothPageScroll.js"></script>-->
-
-<!--<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>-->
-
-
-<!--<script src="js/menuTween.js"></script>-->
-<!--<script src="js/main.js"></script>-->
-
-<script src="js/ilustrationScene.js"></script>
 <script>
-    var begin_tl2 = new TimelineMax({delay: 1});
 
-    begin_tl2.fromTo("#mask-end", 3, {drawSVG:"0%"}, {drawSVG:"100%"})
 
-    .fromTo("#mask-end", 1, {fill: 'rgba(255, 255, 255, 0)'}, {fill: '#f0cbcb'});
-</script>
+
+
+
+
+    (function(selector, horizontalOffset, verticalOffset) {
+        var items;
+
+        selector = selector || '.test';
+        horizontalOffset = horizontalOffset || 5;
+        verticalOffset = verticalOffset || 5;
+
+        items = document.querySelectorAll(selector);
+        items = Array.prototype.slice.call(items);
+
+        items.forEach(function(item) {
+            // Every time the pointer moves over the element the
+            //  CSS-rule in overwritten with new values for
+            //  top and left.
+            item.addEventListener('mousemove', function(e) {
+                let countCssRules = document.styleSheets[0].cssRules.length;
+                let newRule = selector +
+                    ':hover:after { display: block; ' +
+                    'left: ' + (e.offsetX + horizontalOffset) + 'px; ' +
+                    'top: ' +  (e.offsetY + verticalOffset) + 'px; }';
+
+                document.styleSheets[0].insertRule(newRule, countCssRules);
+            });
+        });
+    })('.tooltip-item' , 10, 5);
+</script>'
+
+
 
 
 </body>

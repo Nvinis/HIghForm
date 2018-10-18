@@ -1,22 +1,33 @@
 $(document).ready(function ($) {
     // scroll menu
+
+    var $viewport_H = $(window).height();
+    var $viewport_W = $(window).width();
+    if ($viewport_W <= 800) {
+        var corections_height_menu = 110
+    } else {
+        var corections_height_menu = 0
+    }
+
     var lastId,
         topMenu = $('#nav'),
-        topMenuHeight = topMenu.outerHeight() -300, //+90
+        topMenuHeight = topMenu.outerHeight() - $viewport_H / 3 - corections_height_menu,
         menuItems = topMenu.find('a'),
         scrollItems = menuItems.map(function(){
             var item = $($(this).attr('href'));
             if (item.length) { return item; }
         });
-    console.log(topMenuHeight);
 
     menuItems.click(function(e){
         var href = $(this).attr('href'),
-            offsetTop = href === '#' ? 0 : $(href).offset().top - topMenuHeight;
+            offsetTop = href === '#' ? 0 : $(href).offset().top + topMenuHeight;
         $('html, body').stop().animate({
             scrollTop: offsetTop
-        }, 1200);
-        e.preventDefault();
+        }, 1000);
+
+        console.log(offsetTop);
+        return false
+
     });
 
     // wow
@@ -36,7 +47,7 @@ $(document).ready(function ($) {
         }
     );
     wow.init();
-    //end wow
+    // end wow
 
 
     var controller = new ScrollMagic.Controller(),
@@ -44,18 +55,200 @@ $(document).ready(function ($) {
         sectoins = $('.section-content'),
         mainObject = $('#main'),
         text_Fields = ['#b__8', '#b__7', '#b__6', '#b__5', '#b__4', '#b__3', '#b__2', '#b__1'],  // logo letters
-        time_del = .4, // time for brokess picture
-        time_del2 = .5, // time for multifamily picture
+        time_del = .4; // time for brokess picture
         // multifamily pictures items
-        face__1 = $('#face-item-1'),
-        face__2 = $('#face-item-2'),
-        face__3 = $('#face-item-3');
+
         //end multifamily pictures items
+
+    var tween_2 = new TimelineMax();
+
+
+
+
+    tween_2.set(".bbl", {
+            y: function (i) {
+                return i * 23;
+            }
+        })
+
+        .set(sectoins, {autoAlpha:0});
+
+        if ($viewport_W >= 700) {
+            TweenMax.set(".items-bubbles", {
+                y: function (i) {
+                    return i * -7.2;
+                }
+            });
+
+            TweenMax.set(".items-bubbles", {
+                x: function (x) {
+                    return x * 230;
+                },
+                modifiers: {
+                    x: function (x) {
+                        return x % 3100;
+                    }
+                }
+             });
+
+
+        } else {
+            TweenMax.set(".items-bubbles", {
+                y: function (i) {
+                    return i * -8;
+                }
+            });
+
+            TweenMax.set(".items-bubbles", {
+                x: function (x) {
+                    return x * 90;
+                },
+                modifiers: {
+                    x: function (x) {
+                        return x % 800;
+                    }
+                }
+            });
+            $('#logo--wrapper').prependTo('.top-content-wrap');
+        }
+
+
+
+
+
+
+
+
+    // TweenMax.staggerTo('.items-bubbles', 1, {ease: Back.easeOut.config(2), scale:1, autoAlpha:1}, .01);
+
+
+    var spotsAll = $('.items-bubbles');
+
+    var staggerBubbles = new TimelineMax();
+    staggerBubbles.add(spotsIn());
+
+    function spotsIn() {
+
+        var childBubbles = new TimelineLite();
+        childBubbles.staggerTo(spotsAll, .5, {
+            ease: Back.easeOut.config(2), scale: 1, autoAlpha: 1,
+            cycle: {
+                delay: function () {
+                    return Math.random() * 1;
+                }
+            }
+        });
+
+        return childBubbles;
+    }
+
+    if ($viewport_W >= 800) {
+        var masck_darck_del = 1.5;
+        var tween_bbl = new TimelineMax();
+
+        tween_bbl.to(".bbl", 5, {
+            ease: Linear.easeNone,
+            y: "+=92",
+            modifiers: {
+                y: function (i) {
+                    return i % 92;
+                }
+            },
+            repeat: -1
+        }, 0);
+
+    TweenMax.to('.bubbles--wrap', 3, {ease: Power0.easeNone, y: -70});
+
+    var bubbles_item_Tween = TweenMax.to(".items-bubbles", 40, {
+        ease: Linear.easeNone,
+        y: "-=690",
+        modifiers: {
+            y: function (x) {
+                return x % 690;
+            }
+        },
+        repeat: -1, delay: 3
+    });
+
+    } else {
+        TweenMax.to('.items-bubbles', 1, {autoAlpha: 0.3, delay:1.5});
+
+        TweenMax.set(['.logo___wrap', '.cls-832', ], {transformOrigin:"50% 50%", scale:3});
+        TweenMax.set(['.val--logos2', '.cl' ], {scale:3});
+        TweenMax.set(['#logo-dominic', '#dominica__logo'], {xPercent: -100});
+        TweenMax.set(['#wiliams__logo', '#wiliams_logo'], {xPercent: 100});
+        TweenMax.set(['#launch__logo', '#launch_logo'], {yPercent: -100});
+        var masck_darck_del = 0.8;
+
+    }
+
+    //
+
+    $('.inline-btn, .hover-for-js-btn').mouseenter(function () {
+        var bg__line = $(this).find('.bg--line');
+        TweenLite.to(bg__line, .4, {xPercent: 100});
+    });
+
+    $('.inline-btn, .hover-for-js-btn').mouseleave(function () {
+        var bg__line = $(this).find('.bg--line');
+        var tween_l = new TimelineMax();
+        tween_l
+            .to(bg__line, .4, {xPercent: 400})
+            .set(bg__line, {xPercent: -110});
+    });
+
+    $('#dominica__logo').mouseenter(function () {
+        TweenMax.staggerFromTo('.val--logos1', .8, {y: -40}, {opacity: 1, y: 0}, .2);
+    });
+
+    $('#dominica__logo').mouseleave(function () {
+        TweenMax.staggerTo('.val--logos1', .8, {opacity: 0}, .2)
+
+    });
+
+    $('#launch__logo').mouseenter(function () {
+        TweenMax.staggerFromTo('.val--logos2', .8, {y: -40}, {opacity: 1, y: 0}, .2);
+    });
+
+    $('#launch__logo').mouseleave(function () {
+        TweenMax.staggerTo('.val--logos2', .8, {opacity: 0}, .2)
+
+    });
+
+    $('#wiliams__logo').mouseenter(function () {
+        TweenMax.staggerFromTo('.val--logos3', .8, {y: -40}, {opacity: 1, y: 0}, .2);
+    });
+
+    $('#wiliams__logo').mouseleave(function () {
+        TweenMax.staggerTo('.val--logos3', .8, {opacity: 0}, .2)
+
+    });
+
+    var begin_tl_bbls = new TimelineMax({delay: 1});
+    begin_tl_bbls
+        .fromTo('#first-text', .5, {y: 30}, {ease: Back.easeOut.config(2.5), autoAlpha: 1, y: 0}, '+=.7')
+        .to(['#header-mask-bg', '#logo--wrapper'], 1, {autoAlpha: 1}, '+=1')
+        .to('.items-bubbles-wrap', 1, {backgroundPositionY: 0}, '-=1')
+        .to('#first-text', .5, {ease: Back.easeIn.config(2.5), autoAlpha: 0, y: -120}, '-=1')
+        .to('#header .hero-title', .5, {ease: Back.easeOut.config(2.5), autoAlpha: 1, y: -120}, '-=0.1')
+        .staggerTo(['.wrap-bbls-to-down', '#header .sub-title', '.header-man-icon'], 0.4, {
+            ease: Power2.easeOut,
+            autoAlpha: 1
+        }, 0.12);
+
+
+    setTimeout(function () {
+        $('#header-mask-bg').addClass('transition1s');
+    }, 4000);
+
+
 
     // build tween logo
     var logo_tween = new TimelineMax()
-        .staggerTo(text_Fields, .1, {autoAlpha:0}, .05)
-        .to('#g5210', .5, {ease: Power0.easeNone, x:-127}, '-=.45');
+        // .staggerTo(text_Fields, .1, {autoAlpha:0}, .05)
+        .to('#logo-text', .5, {autoAlpha:0})
+        .to('#g5210', .8, {ease: Power3.easeIn, x:-137}, '-=0.6')
+        .to('#g5210', 0.1, {className: '+=logo-dellay'}, '+=.7');
 
     var scene_logo = new ScrollMagic.Scene({
         triggerElement: "#logo-triger",
@@ -67,234 +260,125 @@ $(document).ready(function ($) {
     // end build logo
 
 
+
+
+    var win_height = $(window).height() / 3.33;
+
+    // build tween bbls hide
+    var tween_bbls = new TimelineMax()
+        .to('#header', 1, {ease: Power1.easeIn, autoAlpha:'0'});
+
+    var scene_bbls = new ScrollMagic.Scene({
+            triggerElement: "#main",
+            triggerHook: 0,
+            duration: win_height
+        })
+            .setTween(tween_bbls)
+            .addTo(controller);
+
+    // end build bbls hide
+
     // build tween part 1
     var sect_tween = new TimelineMax()
-        .to(mainObject, .01, {className:"+=blue-bg"})
-        .to('.brokers-li', .01, {className:"+=active"})
-        .to([sectoins, '.items-bubbles-wrap'], .15, {autoAlpha:'0'}, '0')
-        .to('#brokers .section-content', .4, {autoAlpha:'1'}, '0')
-        // .set('#header-mask-bg', {className: '-=loading'})
-    ;
+        .to('.esef', .3, {autoAlpha:'1'})
+        .to('#header-mask-bg',  0.1, {className:"+=transparent-mask"}, 0)
+        .to(['#brokers-li', '#brokers'], 0.1, {className:"+=active"}, 0);
 
-    var scene = new ScrollMagic.Scene({
+    new ScrollMagic.Scene({
         triggerElement: "#brokers",
         triggerHook: trigerPosition
     })
 
         .setTween(sect_tween)
-        .addIndicators({name: "section1 ", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
+        .removeClassToggle()
+        .setClassToggle('#main', 'blue-bg')
+        .on("leave", function () {
+            if ($viewport_W >= 800) {
+                bubbles_item_Tween.resume();
+                tween_bbl.resume();
+                // console.log('resume/ to Up');
+            }
+        })
+        .on("enter", function () {
+            if ($viewport_W >= 800) {
+                bubbles_item_Tween.pause();
+                tween_bbl.pause();
+                // console.log('pause/ to down');
+            }
+        })
+        // .addIndicators({name: "section1 ", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
         .addTo(controller);
 
     // end build part 1
 
-    // build tween part 1.2
-    var sect_tween1_12 = new TimelineMax()
-        .to('#header-mask-bg', .1, {autoAlpha:'0'});
-
-
-    var scene1_12 = new ScrollMagic.Scene({
-        triggerElement: "#brokers",
-        triggerHook: trigerPosition
-    })
-
-        .setTween(sect_tween1_12)
-        .addIndicators({name: "section1 content", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
-        .addTo(controller);
-
-    // end build part 1.2
-
-
-
-    // build tween brokers picture
-    var brokers_picture = new TimelineMax()
-        .set(['#circle-w-man-inside',
-            '#screen-wrap',
-            '#line-to-left-1',
-            '#line-to-right-1',
-            '#sold-house',
-            '#line-to-down-1',
-            '#results-arrow',
-            '#hamburger-pic'], {
-            autoAlpha: 0,
-            transformOrigin:'50% 50%'
-        })
-        .set('#circle-w-man-inside', {x: -100, y: 30})
-        .set('#line-to-left-1', {y: 90})
-        .set('#line-to-right-1', {x: -150})
-        .set('#sold-house', {scale: 0})
-        .set('#line-to-down-1', {x: -140, rotationX: 160})
-        .set('#hamburger-pic', {scale:0, x:-300})
-
-
-        .to('#circle-w-man-inside', time_del, {ease: Power1.easeIn, autoAlpha:1, x:0, y:0})
-        .to('#line-to-left-1', time_del, {ease: Power1.easeIn, autoAlpha:1, y:0}, '-='+time_del/2)
-        .to('#screen-wrap', time_del, {ease: Power1.easeIn, autoAlpha:1}, '-='+time_del/2)
-        .to('#line-to-right-1', time_del, {ease: Power1.easeIn, autoAlpha:1, x:0}, '-='+time_del/2)
-        .to('#sold-house', time_del, {ease: Back.easeOut.config(2), autoAlpha:1, scale:1}, '-='+time_del/4)
-        .to('#line-to-down-1', time_del, {ease: Power1.easeIn ,autoAlpha:1, x:0}, '-='+time_del/2.5)
-        .to('#results-arrow', time_del, {ease: Power1.easeIn, autoAlpha:1}, '-='+time_del/3.5)
-        .to('#hamburger-pic', time_del, {ease: Power1.easeIn, autoAlpha:1,scale:1,x:0},'-='+time_del/2);
-
-
-    var brokers__picture = new ScrollMagic.Scene({
-        triggerElement: "#brokersPic",
-        triggerHook: .7
-    })
-
-    .setTween(brokers_picture)
-    .addIndicators({name: "brokers picture", colorStart: "#FFFFFF", colorTrigger:"#ffffff"})
-    .reverse(false)
-    .addTo(controller);
-
-    // build tween brokers picture
-
-
-
-    // build tween part 1.1
-    // var sect_tween1_1 = new TimelineMax()
-    //
-    //
-    //     // .to('#brokers h2', 1, {ease: Power2.easeOut, y:0})
-    //     // .to('#brokers p', 1, {ease: Power2.easeInOut, y:0}, '-=.5')
-    //     // .to('#brokers .inline-btn', 1, {ease: Power2.easeInOut, y:0}
-    //
-    //
-    //     // .staggerTo(objects_broker_section, 1, {ease: Power2.easeOut, y:0}, '.5');
-    //
-    //
-    // var scene1_1 = new ScrollMagic.Scene({
-    //     triggerElement: "#brokers",
-    //     triggerHook: trigerPosition
-    //
-    // })
-    //
-    //     .setTween(sect_tween1_1)
-    //     .addIndicators({name: "section1 content", colorStart: "#FFFFFF", colorTrigger:"#245af4"})
-    //     // .reverse(false)
-    //     .addTo(controller);
-
-    // end build part 1.1
-
-
 
     // build tween part 2
     var sect_tween2 = new TimelineMax()
-        .to(mainObject, .01, {className:"-=blue-bg"})
-        .to(mainObject, .01, {className:"+=dark-bg"})
-        .to('.brokers-li ', .01, {className:"-=active"})
-        .to('.multifamily-li ', .01, {className:"+=active"})
-        .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#multifamily .section-content', .3, {autoAlpha:'1'}, '0')
 
-    ;
+    // sect_tween2.to(sectoins, .3, {autoAlpha:'0'})
+    //     .to('#multifamily .section-content', .3, {autoAlpha:'1'})
+        // .set(mainObject, {className:"-=blue-bg"}, 0.01)
+        // .set(mainObject, {className:"+=dark-bg"},0.02)
+
+        .to(['#multifamily-li', '#multifamily'], 0.1, {className:"+=active"})
+        .to(['#brokers-li', '#brokers'],  0.1, {className:"-=active"});
 
 
-    var scene2 = new ScrollMagic.Scene({
+    new ScrollMagic.Scene({
         triggerElement: "#multifamily",
         triggerHook: trigerPosition
     })
 
         .setTween(sect_tween2)
-        .addIndicators({name: "section2",colorStart: "#FFFFFF"})
+        .setClassToggle('#main', 'dark-bg')
+        .on("leave", function () {
+            sect_tween.play();
+
+            console.log('restart/ to Up'); //
+        })
+        // .on("enter", function () {
+        //     TweenLite.to('#brokers .section-content', .3, {autoAlpha:'0'});
+        //     console.log('pause/ to down');
+        // })
+        // .addIndicators({name: "section2",colorStart: "#FFFFFF"})
         .addTo(controller);
 
     // end build part 2
 
-    // build tween multifamily picture
-    // var multifamily_picture = new TimelineMax()
-    //     .set(['#lease-pic',
-    //         '#build-vak',
-    //         '#noVacancy',
-    //         '#magnet-pic',
-    //         '#magnetic-effect-top',
-    //         '#magnetic-effect-bot',
-    //         face__1,
-    //         face__2,
-    //         face__3], {
-    //         autoAlpha: 0,
-    //         transformOrigin:'50% 50%'
-    //     })
-    //     .set('#lease-pic', {scale: 0})
-    //     .set('#noVacancy', {y:100})
-    //     .set('#magnet-pic', {scale:.7})
-    //     .set('#magnetic-effect-top', {rotation: -15, scale: .7})
-    //     .set('#magnetic-effect-bot', {rotation: 15, scale: 1})
-    //     .set(face__1, {scale: .5, x:600})
-    //     .set(face__2, {scale: 1.3, x:700})
-    //     .set(face__3, {scale: .5, x:400, y:-60})
-    //
-    //     .to('#lease-pic', time_del2, {ease: Power1.easeIn, autoAlpha:1, scale: 1})
-    //     .to('#build-vak', time_del2, {ease: Power1.easeIn, autoAlpha:1}, '-='+time_del/2)
-    //     .to('#noVacancy', time_del2, {ease: Power1.easeIn, autoAlpha:1, y:1}, '-='+time_del/2)
-    //     .to('#magnet-pic', time_del2, {ease: Back.easeOut.config(4), autoAlpha:1, scale:1})
-    //
-    //     .to(['#magnetic-effect-top', '#magnetic-effect-bot'], time_del2, {ease: Power1.easeIn, autoAlpha:1},'-='+time_del*1.8)
-    //     .to('#magnetic-effect-top', time_del2*3, {ease: RoughEase.ease.config({ template:  Power0.easeNone, strength: 1, points: 20, taper: "none", randomize:  true, clamp: false}),  rotation:15, scale:1, repeat: -1, yoyo: true}, 0)
-    //     .to('#magnetic-effect-bot', time_del2*3, {ease: RoughEase.ease.config({ template:  Power0.easeNone, strength: 1, points: 20, taper: "none", randomize:  true, clamp: false}),  rotation:-15, scale:.8, repeat: -1, yoyo: true}, 0)
-    //
-    //     // face1
-    //     .to(face__1, time_del2, {ease: Power1.easeIn, autoAlpha:1}, '-='+time_del/2)
-    //     .to(face__1, 2, {bezier:{curviness:1.5, values:[{x:450, y:80, rotation: 0.01}, {x:200, y:-80, rotation: 0.01}, {x:0, y:0, rotation: 0.01}]}, ease: Power0.easeNone}, '-=.7')
-    //     .to(face__1, 2, {ease: Power1.easeIn, scale: 1, onComplete:runFaceOwne}, '-=2')
-    //
-    //     // face2
-    //     .to(face__2, time_del2, {ease: Power1.easeIn, autoAlpha:1}, '-=2')
-    //     .to(face__2, 2, {bezier:{curviness:1.5, values:[{x:500, y:-80, rotation: 0.01}, {x:233, y:80, rotation: 0.01}, {x:0, y:0, rotation: 0.01}]}, ease: Power0.easeNone}, '-=.7')
-    //     .to(face__2, 2, {ease: Power1.easeIn, scale: 1, onComplete:runFaceTwo}, '-=2')
-    //     // face3
-    //     .to(face__3, time_del2, {ease: Power1.easeIn, autoAlpha:1}, '-=2')
-    //     .to(face__3, 2, {bezier:{curviness:1.5, values:[{x:280, y:0, rotation: 0.01}, {x:160, y:80, rotation: 0.01}, {x:0, y:0, rotation: 0.01}]}, ease: Power0.easeNone}, '-=.7')
-    //     .to(face__3, 2, {ease: Power1.easeIn, scale: 1, onComplete:runFaceThree}, '-=2');
-    //
-    // function runFaceOwne() {
-    //     TweenMax.to(face__1, 15, {bezier:{curviness:1.3, values:[{x:-14, y:-18, rotation: 0.01, scaleX:.9, scaleY:.9}, {x:12, y:-18,rotation: 0.01, scaleX:.8, scaleY:.8}, {x:12, y:0,rotation: 0.01, scaleX:.9, scaleY:.9}, {x:0, y:0,rotation: 0.01, scaleX:1, scaleY:1} ]}, repeat:-1, ease: Power0.easeNone})
-    // }
-    //
-    // function runFaceTwo() {
-    //     TweenMax.to(face__2, 18, {bezier:{curviness:2, values:[{x:-12, y:0, rotation: 0.01, scaleX:.9, scaleY:.9}, {x:-12, y:12,rotation: 0.01, scaleX:.8, scaleY:.8}, {x:12, y:12,rotation: 0.01, scaleX: 0.8, scaleY: .8}, {x:12, y:0,rotation: 0.01, scaleX:0.9, scaleY: .9}, {x:0, y:0,rotation: 0.01, scaleX:1, scaleY:1}]}, repeat:-1, ease: Power0.easeNone},0)
-    // }
-    //
-    // function runFaceThree() {
-    //     TweenMax.to(face__3, 15, {bezier:{curviness:1, values:[{x:0, y:-40,rotation: 0.01, scaleX:1.2, scaleY:1.2}, {x:-40, y:-40,rotation: 0.01, scaleX:1.3, scaleY:1.3}, {x:-40, y:0,rotation: 0.01,scaleX:1.15, scaleY:1.15}, {x:0, y:0, rotation: 0.01, scaleX:1, scaleY:1}]}, repeat:-1, ease: Power0.easeNone},0)
-    // }
-    //
-    // var multifamily__picture = new ScrollMagic.Scene({
-    //     triggerElement: "#multifamilyPic",
-    //     triggerHook: .7
-    //
-    // })
-    //
-    //     .setTween(multifamily_picture)
-    //     .addIndicators({name: "multifamily picture", colorStart: "#FFFFFF", colorTrigger:"#ffffff"})
-    //     .reverse(false)
-    //     .addTo(controller);
-
-    // build tween multifamily picture
-
-
-
 
     // build tween part 3
     var sect_tween3 = new TimelineMax()
-        .to(mainObject, .01, {className:"-=dark-bg"})
-        .to(mainObject, .01, {className:"+=white-bg"})
-        .to('.multifamily-li', .01, {className:"-=active"})
-        .to('.products-li', .01, {className:"+=active"})
 
         // .to(mainObject, .001, {background:'#ffffff'})
-        .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#products .section-content', .3, {autoAlpha:'1'}, '0')
-        .to('#nav li  a', .05, {color: '#01173a'});
+    // sect_tween3 .to(sectoins, .3, {autoAlpha:'0'})
+    //     .to('#products .section-content', .3, {autoAlpha:'1'})
+    //     .to('#nav li  a', .05, {color: '#01173a'})
+        // .set(mainObject, {className:"-=dark-bg"}, 0.01)
+        // .set(mainObject, {className:"+=white-bg"},0.02)
 
+        .to('#nav', 0.1, {className:"+=arrow-darck"})
+        .to(['#products-li', '#products'], 0.1, {className:"+=active"})
+        .to(['#multifamily-li','#multifamily'], 0.1, {className:"-=active"});
 
-    var scene3 = new ScrollMagic.Scene({
+    
+    new ScrollMagic.Scene({
         triggerElement: "#products",
         triggerHook: trigerPosition
 
     })
 
         .setTween(sect_tween3)
-        .addIndicators({name: "section3", colorStart: "#ffffff", colorTrigger:"#000000"})
+        .setClassToggle('#main', 'white-bg')
+        .on("leave", function () {
+            // sect_tween.restart();
+            // TweenLite.to('#multifamily .section-content', .3, {autoAlpha:'1'});
+            // console.log('restart/ to Up'); //
+        })
+        // .on("enter", function () {
+        //     TweenLite.to('#multifamily .section-content', .3, {autoAlpha:'0'});
+        //     console.log('pause/ to down');
+        // })
+        // .addIndicators({name: "section3", colorStart: "#ffffff", colorTrigger:"#000000"})
         .addTo(controller);
 
     // end build part 3
@@ -303,14 +387,13 @@ $(document).ready(function ($) {
 
     // build tween part 4 about Section
     var sect_tween4 = new TimelineMax()
-        .to(mainObject, .01, {className:"-=white-bg"})
-        .to(mainObject, .01, {className:"+=dark-bg"})
-        // .to(mainObject, .001, {background:'#040419'})
-        .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#about .section-content', .3, {autoAlpha:'1'}, '0')
-        .to('#nav li  a', .05, {color: '#ffffff'});
-
-
+    // sect_tween4.to(sectoins, .3, {autoAlpha:'0'})
+        // .to([sectoins, '#our-team-section'], .3, {autoAlpha:'0'},0)
+        // .to('#about .section-content', .3, {autoAlpha:'1'})
+        // .to('#nav li  a', .05, {color: '#ffffff'})
+        .to('#nav', 0.1, {className:"-=arrow-darck"})
+        .to(['#about-li','#about'], 0.1, {className:"+=active"})
+        .to(['#products-li','#products'], 0.1, {className:"-=active"});
 
     var scene4 = new ScrollMagic.Scene({
         triggerElement: "#about",
@@ -318,12 +401,11 @@ $(document).ready(function ($) {
     })
 
         .setTween(sect_tween4)
-        .addIndicators({name: "section4",colorStart: "#fff", colorTrigger:"#ffffff"})
+        .setClassToggle('#main', 'dark-bg2')
+        // .addIndicators({name: "section4",colorStart: "#fff", colorTrigger:"#ffffff"})
         .addTo(controller);
 
     // end build part 4 about Section
-
-
 
 
 
@@ -344,7 +426,7 @@ $(document).ready(function ($) {
 
 
         .to('#grid--lines', time_del, {ease: Power1.easeIn, autoAlpha:1})
-        .to('#masck--darck', 1.5, {ease: Power1.easeInOut, xPercent: 105})
+        .to('#masck--darck', masck_darck_del, {ease: Power1.easeInOut, xPercent: 105})
         .to(['#ourResultsPic .cls-80',  '#ourResultsPic .cls-81', '#ourResultsPic .cls-82'], .5, {scaleY:1}, '-=0.5')
         .staggerTo('.pint--point circle', time_del, {ease: Back.easeOut.config(1.9), scale:1}, .2, '-=0.3')
         .staggerTo('.pint--point2 circle', time_del, {ease: Back.easeOut.config(1.9), scale:1}, .2, '-=1')
@@ -354,7 +436,8 @@ $(document).ready(function ($) {
 
     var scene4Pic = new ScrollMagic.Scene({
         triggerElement: "#about",
-        triggerHook: .5
+        triggerHook: .5,
+        reverse: false
     })
 
         .setTween(sect_tween4Pic)
@@ -364,19 +447,17 @@ $(document).ready(function ($) {
 
 
 
-
-
-
-
-
     // build tween part 5 our-news Section
     var sect_tween5 = new TimelineMax()
-        .to(mainObject, .01, {className:"-=dark-bg"})
-        .to(mainObject, .01, {className:"+=white-bg"})
-        // .to(mainObject, .001, {background:'#ffffff'})
-        .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#our-news .section-content', .3, {autoAlpha:'1'}, '0')
-        .to('#nav li  a', .05, {color: '#01173a'});
+        // .to(mainObject, 0.1, {className:"-=dark-bg"})
+        // .to(mainObject, 0.1, {className:"+=white-bg"})
+        // .to(sectoins, .3, {autoAlpha:'0'})
+        // .to('#our-news', .3, {autoAlpha:'1'})
+        // .to('#nav li  a', .05, {color: '#01173a'})
+        .to('#nav', 0.1, {className:"+=arrow-darck"})
+        .to('#our-news',  0.1, {className:"+=active"})
+        .to('#about', 0.1, {className:"-=active"});
+
 
 
     var scene5 = new ScrollMagic.Scene({
@@ -385,7 +466,8 @@ $(document).ready(function ($) {
     })
 
         .setTween(sect_tween5)
-        .addIndicators({name: "section4",colorStart: "#fff", colorTrigger:"#ffffff"})
+        .setClassToggle('#main', 'white-bg2')
+        // .addIndicators({name: "section4",colorStart: "#fff", colorTrigger:"#ffffff"})
         .addTo(controller);
 
     // end build part 5 our-news Section
@@ -394,12 +476,16 @@ $(document).ready(function ($) {
 
     // build tween part 6 our Team Section
     var sect_tween6 = new TimelineMax()
-        .to(mainObject, .01, {className:"-=white-bg"})
-        .to(mainObject, .01, {className:"+=light-bg"})
-        // .to(mainObject, .001, {background:'#f4f7f9'})
-        .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#our-team-section .section-content', .3, {autoAlpha:'1'}, '0')
-        .to('#nav li  a', .05, {color: '#01173a'});
+
+        // .to(mainObject, 0.1, {className:"-=white-bg"})
+        // .to(mainObject, 0.1, {className:"+=light-bg"})
+        // .to(sectoins, .3, {autoAlpha:'0'})
+        // .to('#our-team-section', .3, {autoAlpha:'1'})
+        // .to('#nav li  a', .05, {color: '#01173a'})
+
+
+        .to('#our-news', 0.1, {className:"-=active"})
+        .to('#our-team-section', 0.1, {className:"+=active"});
 
 
 
@@ -409,7 +495,8 @@ $(document).ready(function ($) {
     })
 
         .setTween(sect_tween6)
-        .addIndicators({name: "section4",colorStart: "#fff", colorTrigger:"#ffffff"})
+        .setClassToggle('#main', 'light-bg')
+        // .addIndicators({name: "section4",colorStart: "#000", colorTrigger:"#000"})
         .addTo(controller);
 
     // end build part 6 our Team Section
@@ -420,23 +507,29 @@ $(document).ready(function ($) {
 
     var sect_tween7 = new TimelineMax()
         // .to(mainObject, .001, {background:'#f4f7f9'})
-        .to(sectoins, .3, {autoAlpha:'0'}, '0')
-        .to('#footer .section-content', .3, {autoAlpha:'1'}, 0)
-        .to('#nav li  a', .05, {color: '#01173a'})
-        .to('body', .01, {className:"+=tight"}, 0);
+        .to(sectoins, 0.3, {autoAlpha:'0'})
+        .to('#footer .section-content', 0.3, {autoAlpha:'1'}, 0)
+        // .to('#nav li  a', .05, {color: '#01173a'})
+
+        .to('#about-li', 0.1, {className:"-=active"})
+        .to('#lets-talk-li', 0.1, {className:"+=active"});
 
 
 
     var scene7 = new ScrollMagic.Scene({
         triggerElement: "#footer",
-        triggerHook: .95
+        triggerHook: .8
     })
 
         .setTween(sect_tween7)
-        .addIndicators({name: "footer",colorStart: "#000", colorTrigger:"#000"})
+        .setClassToggle('body', 'tight')
+
+        // .addIndicators({name: "footer",colorStart: "#000", colorTrigger:"#000"})
         .addTo(controller);
 
     // end build part 7 footer Section
+
+
 
     // build tween part 8 footer Section
     var mySplitText = new SplitText("#quoteh2", {type:"words,chars"}),
@@ -449,7 +542,7 @@ $(document).ready(function ($) {
 
     var scene8 = new ScrollMagic.Scene({
         triggerElement: "#footer",
-        triggerHook: .95,
+        triggerHook: .8,
         reverse: false
     })
 
@@ -467,13 +560,6 @@ $(document).ready(function ($) {
 
     });
 
-    // $(".listener-contained").hover3d({
-    //     selector: ".project__card",
-    //     shine: false,
-    //     sensitivity: 25,
-    //
-    // });
-
     // prew client
     $('#prew-client-owl').owlCarousel({
         items:1,
@@ -486,24 +572,64 @@ $(document).ready(function ($) {
 
     });
 
-    // prew client
+    // news client
     $('#news-carousel').owlCarousel({
-        // items:1,
+        items:2,
         loop:false,
         margin : 0,
         nav: false,
         autoplay: false,
-        smartSpeed : 1500
+        smartSpeed : 1500,
+        responsive:{
+            0:{
+                items:1,
+                margin : 20,
+            },
+            1024:{
+                items:1,
+                margin : 40,
+            }
+        }
+
     });
 
-    // var sMenu_height = fu $('.sub-menu');
-    //
-    // $('.sub-menu').each(function() {
-    //     var sMenu_height = $(this).height();
-    //
-    //     $(this).height(sMenu_height);
-    //     console.log(sMenu_height);
-    // });
+    $('.our--person').on('mousemove', function(e) {
+        var $id = $(this).data("id"),
+            $object = $('#text-in-' + $id);
+
+        flag = true;
+        TweenLite.set($object,{autoAlpha:1});
+
+
+        TweenLite.set($object,  {
+            css: {
+                left: e.offsetX - 63,
+                top: e.offsetY + 30
+            }
+        });
+    });
+
+
+
+    $('.our--person').mouseleave(function(){
+        var $id = $(this).data("id"),
+            $object = $('#text-in-' + $id);
+        flag = false;
+        TweenLite.set($object,{autoAlpha:0});
+    });
+
+
+    $('#slicknav_btn').click(function () {
+        $(this).toggleClass('slicknav_open');
+        $('#nav').slideToggle();
+        return false;
+    });
+
+    $('#nav').find('li').find('a').click(function () {
+        $('#nav').slideUp();
+        $('#slicknav_btn').removeClass('slicknav_open');
+
+    });
 
 
 });
