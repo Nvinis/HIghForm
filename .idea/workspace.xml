@@ -6,7 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b2a7f0a-1e7f-47ee-ada3-89b53fa75d89" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,12 +38,86 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+            <state relative-caret-position="253">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#3;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#4;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#5;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#6;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#7;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#8;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#9;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#10;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#11;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#12;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#13;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#14;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#15;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#16;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#17;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#18;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#19;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#20;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#21;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#22;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#23;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#24;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#25;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#26;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#27;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#28;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#29;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#30;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#31;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#32;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#33;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#34;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#35;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#36;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#37;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#38;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#39;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#40;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#41;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#42;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#5;n#g#0;n#g#0;n#svg#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#0;n#g#0;n#g#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#1;n#g#0;n#g#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#2;n#g#0;n#g#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#3;n#g#0;n#g#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#4;n#g#0;n#g#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#5;n#g#0;n#g#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#6;n#g#0;n#g#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#8;n#g#0;n#g#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#9;n#g#0;n#g#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#11;n#g#0;n#g#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#g#12;n#g#0;n#g#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -345,10 +418,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webbox.top/hfnew/js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webbox.top/hfnew/js" />
       <recent name="$PROJECT_DIR$/webbox.top/hfnew/images" />
       <recent name="$PROJECT_DIR$/webbox.top/hfnew/fonts" />
-      <recent name="$PROJECT_DIR$/webbox.top/hfnew/js" />
       <recent name="$PROJECT_DIR$/webbox.top/hfnew/css" />
       <recent name="$PROJECT_DIR$/webbox.top/hfnew" />
     </key>
@@ -465,12 +541,12 @@
       <workItem from="1539260026469" duration="63495000" />
       <workItem from="1539528727317" duration="17236000" />
       <workItem from="1539611485584" duration="9917000" />
-      <workItem from="1539635600864" duration="56810000" />
+      <workItem from="1539635600864" duration="57003000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="388383000" />
+    <option name="totallyTimeSpent" value="388576000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2436" height="1417" extended-state="0" />
@@ -575,20 +651,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/client1.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/ourResultsPic.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="0" column="3571" lean-forward="false" selection-start-line="0" selection-start-column="3571" selection-end-line="0" selection-end-column="3571" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/ourResultsPic_1.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -668,13 +730,6 @@
     <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/test2" />
     <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/test2.js" />
     <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/test.js" />
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/SplitText.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="12" column="4218" lean-forward="true" selection-start-line="12" selection-start-column="4218" selection-end-line="12" selection-end-column="4218" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/ourResultsSvg.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -711,13 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
           <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/MorphSVGPlugin.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-910">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -886,10 +934,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="994">
+          <caret line="1439" column="21" lean-forward="false" selection-start-line="1439" selection-start-column="21" selection-end-line="1439" selection-end-column="21" />
+          <folding>
+            <marker date="1539894700000" expanded="true" signature="12499:12656" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/tour.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/videoShadow.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="585" column="28" lean-forward="true" selection-start-line="585" selection-start-column="28" selection-end-line="585" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/BezierPlugin.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/ModifiersPlugin.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/MorphSVGPlugin.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/SplitText.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="12" column="4218" lean-forward="false" selection-start-line="12" selection-start-column="4218" selection-end-line="12" selection-end-column="4218" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        <state relative-caret-position="357">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -955,51 +1080,6 @@
             <element signature="n#g#12;n#g#0;n#g#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#section#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="994">
-          <caret line="1439" column="21" lean-forward="false" selection-start-line="1439" selection-start-column="21" selection-end-line="1439" selection-end-column="21" />
-          <folding>
-            <marker date="1539894700000" expanded="true" signature="12499:12656" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/tour.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/images/videoShadow.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webbox.top/hfnew/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="585" column="28" lean-forward="true" selection-start-line="585" selection-start-column="28" selection-end-line="585" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
