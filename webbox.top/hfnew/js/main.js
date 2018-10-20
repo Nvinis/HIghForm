@@ -173,7 +173,7 @@ $(document).ready(function ($) {
     } else {
         TweenMax.to('.items-bubbles', 1, {autoAlpha: 0.3, delay:1.5});
 
-        TweenMax.set(['.logo___wrap', '.cls-832', ], {transformOrigin:"50% 50%", scale:3});
+        TweenMax.set(['.logo___wrap', '.cls-832'], {transformOrigin:"50% 50%", scale:3});
         TweenMax.set(['.val--logos2', '.cl' ], {scale:3});
         TweenMax.set(['#logo-dominic', '#dominica__logo'], {xPercent: -100});
         TweenMax.set(['#wiliams__logo', '#wiliams_logo'], {xPercent: 100});
@@ -449,11 +449,6 @@ $(document).ready(function ($) {
 
     // build tween part 5 our-news Section
     var sect_tween5 = new TimelineMax()
-        // .to(mainObject, 0.1, {className:"-=dark-bg"})
-        // .to(mainObject, 0.1, {className:"+=white-bg"})
-        // .to(sectoins, .3, {autoAlpha:'0'})
-        // .to('#our-news', .3, {autoAlpha:'1'})
-        // .to('#nav li  a', .05, {color: '#01173a'})
         .to('#nav', 0.1, {className:"+=arrow-darck"})
         .to('#our-news',  0.1, {className:"+=active"})
         .to('#about', 0.1, {className:"-=active"});
@@ -467,7 +462,6 @@ $(document).ready(function ($) {
 
         .setTween(sect_tween5)
         .setClassToggle('#main', 'white-bg2')
-        // .addIndicators({name: "section4",colorStart: "#fff", colorTrigger:"#ffffff"})
         .addTo(controller);
 
     // end build part 5 our-news Section
@@ -476,14 +470,6 @@ $(document).ready(function ($) {
 
     // build tween part 6 our Team Section
     var sect_tween6 = new TimelineMax()
-
-        // .to(mainObject, 0.1, {className:"-=white-bg"})
-        // .to(mainObject, 0.1, {className:"+=light-bg"})
-        // .to(sectoins, .3, {autoAlpha:'0'})
-        // .to('#our-team-section', .3, {autoAlpha:'1'})
-        // .to('#nav li  a', .05, {color: '#01173a'})
-
-
         .to('#our-news', 0.1, {className:"-=active"})
         .to('#our-team-section', 0.1, {className:"+=active"});
 
@@ -550,6 +536,33 @@ $(document).ready(function ($) {
         .addTo(controller);
 
     // end build part 7 footer Section
+
+    // build tween paralax 24/7
+
+    var $prlx_section_height = $('#prlx-section').height();
+    console.log($prlx_section_height);
+
+    var paralax = new TimelineMax()
+        .to('#i-tem-2', 1, {ease: Power0.easeNone, y:140}, 0)
+        .to('#i-tem-3', 1, {ease: Power0.easeNone, y:-150}, 0)
+        .to('#i-tem-4', 1, {ease: Power0.easeNone, y:100}, 0)
+        .to('#i-tem-5', 1, {ease: Power0.easeNone, y:-250}, 0)
+        .to('#i-tem-7', 1, {ease: Power0.easeNone, y:200}, 0)
+        .to('#i-tem-8', 1, {ease: Power0.easeNone, y:-180}, 0);
+
+    var paralax_scene = new ScrollMagic.Scene({
+        triggerElement: "#prlx-section",
+        duration: 3600,
+        triggerHook: 1
+    })
+
+        .setTween(paralax)
+        // .setClassToggle('body', 'tight')
+
+        .addIndicators({name: "paralax",colorStart: "#000", colorTrigger:"#000"})
+        .addTo(controller);
+
+    // end build paralax 24/7
 
 
 

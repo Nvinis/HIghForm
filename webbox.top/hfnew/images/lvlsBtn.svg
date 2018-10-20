@@ -1,0 +1,21 @@
+<svg id="btn-lvls" xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112">
+    <defs>
+        <style>#btn-lvls .cls-1{fill:#1245fb;}#btn-lvls .cls-2{opacity:0.2;fill:url(#Degradado_sin_nombre_558);}#btn-lvls .cls-3{fill:#f5f8f9;}
+        </style>
+        <linearGradient id="Degradado_sin_nombre_558" x1="56" y1="-5" x2="56" y2="88.9" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#1967f7"/>
+            <stop offset="0.2" stop-color="#2976f5" stop-opacity="0.79"/>
+            <stop offset="0.59" stop-color="#4893f2" stop-opacity="0.37"/>
+            <stop offset="0.87" stop-color="#5ba5f0" stop-opacity="0.1"/>
+            <stop offset="1" stop-color="#63acef" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <g>
+        <g>
+            <circle class="cls-1" cx="56" cy="56" r="26"/>
+            <circle class="cls-2" cx="56" cy="56" r="42"/>
+            <circle class="cls-2" cx="56" cy="56" r="56"/>
+            <polyline class="cls-3" points="51.97 46.88 51.97 65.12 63.62 56 51.97 46.88"/>
+        </g>
+    </g>
+</svg>
