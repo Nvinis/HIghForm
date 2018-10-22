@@ -6,6 +6,8 @@
     <title>tour24/7 </title>
     <!--Main-->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <!--<link href="css/jquery-ui.theme.css" rel="stylesheet" type="text/css">-->
     <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
 
@@ -98,7 +100,7 @@
             </div>
 
             <div class="w-100 text-center to-next-section position-absolute">
-                <a href="#" class="text-white text-uppercase after-block">LEARN MORE</a>
+                <a href="#searching-flats" id="to-next-section" class="text-white text-uppercase after-block"><span class="d-block">LEARN MORE</span></a>
             </div>
         </div>
     </header>
@@ -106,28 +108,26 @@
     <section id="searching-flats">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 mb-2">
+                <div class="col-12 mb-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" data-wow-offset="500">
                     <img src="images/searching-flats.svg" alt="" class="img-fluid d-block mx-auto">
                 </div>
 
                 <h2 class="text-white col-lg-8 col-12
-                 ff-extrabold text-center mb-md-5">Over 60% of apartment hunters <br>search when doors are closed</h2>
-                <div class="col-6">
-                    <p class="sub-title text-white">Tour 24/7 gives your prospects the most engaging apartment tour
-                        experience,
-                        whenever and
+                 ff-extrabold text-center mb-md-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" data-wow-offset="100">Over 60% of apartment hunters <br>search when doors are closed</h2>
+                <div class="col-md-6 col-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" data-wow-offset="100">
+                    <p class="sub-title text-white">Tour 24/7 gives your prospects the most engaging apartment tour experience, whenever and
                         wherever they’re searching. Allow your future residents to:</p>
                 </div>
 
                 <div class="col-12 row mx-0 px-md-5">
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" data-wow-offset="100">
                         <div class="item-search-flat text-white text-center row mx-0 align-content-end">
                             <img src="images/searching-icon1.svg" alt="" class="img-fluid d-block mx-auto item-search-img">
                             <p class="ff-semibold fs-mid mb-1">Explore any space <br> 24 hours a day</p>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" data-wow-offset="100">
                         <div class="item-search-flat text-white text-center row mx-0 align-content-end">
                             <img src="images/searching-icon2.svg" alt=""
                                  class="img-fluid d-block mx-auto item-search-img">
@@ -135,7 +135,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s" data-wow-offset="100">
                         <div class="item-search-flat text-white text-center row mx-0 align-content-end">
                             <img src="images/searching-icon3.svg" alt=""
                                  class="img-fluid d-block mx-auto item-search-img mb-4">
@@ -143,7 +143,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="100">
                         <div class="item-search-flat text-white text-center row mx-0 align-content-end">
                             <img src="images/searching-icon4.svg" alt=""
                                  class="img-fluid d-block mx-auto item-search-img mb-4">
@@ -161,15 +161,16 @@
     <section id="virtual-tours-generate" >
         <div class="container">
             <div class="row position-relative">
-                <h2 class="col-lg-6 offset-lg-2 col-12 ff-extrabold mb-md-5 text-lg-left text-center">Virtual Tours
+                <h2 class="col-lg-6 offset-lg-2 col-12 ff-extrabold mb-md-5 text-lg-left text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" data-wow-offset="100">Virtual Tours
                     Generate 49% More Leads</h2>
-                <p class="col-lg-7 offset-lg-3 col-12 pl-lg-5 sub-title wow fadeInUp mb-0">Multi-family sites that utilize 3D virtual tours increase engagement by 300%. Cick play to experience the difference of real 3D.</p>
+                <p class="col-lg-7 offset-lg-3 col-12 pl-lg-5 sub-title wow fadeInUp mb-0" data-wow-duration="1s" data-wow-delay=".4s" data-wow-offset="100">Multi-family sites that utilize 3D virtual tours increase engagement by 300%. Cick play to experience the difference of real 3D.</p>
 
-                <img src="images/magnetic-people.svg" alt="" class="img-fluid magnetic-pic">
+                <img src="images/magnetic-people.svg" alt="" class="img-fluid magnetic-pic wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" data-wow-offset="100">
 
                 <!-- Button trigger modal -->
-                <div class="button-video-call-wrap2 position-absolute  col-12">
-                    <button type="button" class="play-btn " data-toggle="modal" data-target="#exampleModal">
+                <div class="button-video-call-wrap2 position-absolute col-12 wow zoomIn animated" data-wow-duration="1s"
+                     data-wow-delay=".4s" data-wow-offset="100">
+                    <button type="button" class="play-btn" data-toggle="modal" data-target="#exampleModal">
                         <svg id="btn-lvls" xmlns="http://www.w3.org/2000/svg" width="112" height="112"
                              viewBox="0 0 112 112" class="img-fluid">
                             <defs>
@@ -202,38 +203,80 @@
     </section>
 
     <!--Paralax section-->
-    <section id="prlx-section">
+    <section id="prlx-section" class="position-relative">
         <div class="container-fluid">
-            <div class="row justify-content-center ">
-
+            <div class="row justify-content-center">
                 <div class="col-12"></div>
-                <div id="i-tem-2" class="prlx-text-item ">
+
+                <div id="i-tem-2" class="prlx-text-item" data-wow-duration=".4s"
+                     data-wow-delay=".1s">
                     <h2 class="ff-extrabold text-lg-left text-center mb-md-5">A True 3D Experience</h2>
                     <p>3D virtual tours give your prospects the ability to truly imagine themselves in your community in a way photos and floorplans simply can't.</p>
                     <p>Today's renters expect more media, information, and access than ever before. Give your leads all the right tools to choose you over your competition.</p>
                 </div>
                 <div class="col-12"></div>
-                <div id="i-tem-3" class="photo-item-prlx ml-auto pll-right before-block">
+                <div id="i-tem-3" class="photo-item-prlx ml-auto pll-right before-block" data-wow-duration=".4s"
+                     data-wow-delay=".1s">
                     <img src="images/anthony-tran-1107783-unsplash.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="col-12"></div>
-                <div id="i-tem-4" class="prlx-text-item">
+                <div id="i-tem-4" class="prlx-text-item" data-wow-duration=".4s"
+                     data-wow-delay=".1s">
                     <h2 class="ff-extrabold text-lg-left text-center mb-md-5">Instegrates with your software</h2>
                     <p>3Tour 24/7 works with your property management software to retain your real-time pricing and availability.</p>
                 </div>
                 <div class="col-12"></div>
-                <div id="i-tem-5" class="photo-item-prlx mr-auto pll-left before-block">
+                <div id="i-tem-5" class="photo-item-prlx mr-auto pll-left before-block" data-wow-duration=".4s"
+                     data-wow-delay=".1s">
                     <img src="images/guille-pozzi-1106428-unsplash.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="col-12"></div>
-                <div id="i-tem-7" class="prlx-text-item">
+                <div id="i-tem-7" class="prlx-text-item" data-wow-duration=".4s"
+                     data-wow-delay=".1s">
                     <h2 class="ff-extrabold text-lg-left text-center mb-md-5">Play nice with Google</h2>
                     <p>Google’s algorythm prioritizes content with rich media and engaging experiences. We work with Google to publish 3D virtual tours to your Business and Maps listing, giving you and edge over competitors with naturally effective SEO performance.</p>
                 </div>
                 <div class="col-12"></div>
-                <div id="i-tem-8" class="photo-item-prlx ml-auto pll-right before-block">
+                <div id="i-tem-8" class="photo-item-prlx ml-auto pll-right before-block" data-wow-duration=".4s"
+                     data-wow-delay=".1s">
                     <img src="images/bogdan-pasca-1108035-unsplash.jpg" alt="" class="img-fluid">
                 </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="slider-counter" class="after-block">
+        <div class="container position-relative slider-sections-content wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" data-wow-offset="100">
+            <div class="row text-white align-items-md-start">
+                <h2 class="col-lg-9 col-12 ff-extrabold text-lg-left text-center text-white">Bring your
+                    space to life <br>
+                    (and more lives to your space)</h2>
+                <div class="col-12"></div>
+                <p class="col-lg-7 col-12 sub-title">Easy virtual tour production and integration for communities of any size. Starting at $499</p>
+                <div class="col-7 row mx-0 align-items-md-center pr-md-0">
+
+                    <div class="ff-extrabold name-slider fs-big d-inline-block">Model unit</div>
+                    <div id="slider-range-max"></div>
+                    <input type="text" id="amount" class="slider-value fs-big col-1" readonly>
+
+                    <div class="col-12 mb-4"></div>
+
+                    <div class="ff-extrabold name-slider fs-big d-inline-block">Amenity space</div>
+                    <div id="slider-range-max2"></div>
+                    <input type="text" id="amount2" class="slider-value fs-big col-1" readonly>
+
+                    <p class="mt-lg-40">Includes: Interactive web viewer, Real-time pricing integration, Google maps
+                        publication</p>
+
+                </div>
+
+                <div class="col-5 row mx-0 justify-content-center">
+                    <div id="price" class="ff-semibold d-inline-block col-12">$<span id="price-val">499</span></div>
+
+                    <a href="#" class="btn btn-blues">Book now</a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -374,41 +417,40 @@
 </footer>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade video-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="embed-responsive embed-responsive-16by9">
+
+                    <!--<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/L3wKzyIN1yk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+                </div>
+
             </div>
         </div>
     </div>
 </div>
 
 <script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/jqueryUi.js"></script>
 <!--<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/poper.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/TweenMax.min.js"></script>
 <!--<script src="js/DrawSVGPlugin.min.js"></script>-->
-<script src="js/BezierPlugin.min.js"></script>
-<script src="js/ScrollToPlugin.min.js"></script>
+<!--<script src="js/BezierPlugin.min.js"></script>-->
+<!--<script src="js/ScrollToPlugin.min.js"></script>-->
 
-<script src="js/ModifiersPlugin.min.js"></script>
+<!--<script src="js/ModifiersPlugin.min.js"></script>-->
 <script src="js/SplitText.min.js"></script>
-<script src="js/MorphSVGPlugin.min.js"></script>
+<!--<script src="js/MorphSVGPlugin.min.js"></script>-->
 
-<script src="js/animateJs.js"></script>
+<!--<script src="js/animateJs.js"></script>-->
 <script src="js/wow.min.js"></script>
 <script src="js/ScrollMagic.min.js"></script>
 <script src="js/sceneTween.js"></script>
